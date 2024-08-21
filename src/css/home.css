@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  color: #757693;
+  line-height: 26px;
+}
+
+/* HEADER */
+header {
+  @apply w-full py-7 fixed left-0 top-0 z-50;
+  transition: all, 0.3s;
+}
+.navbar__container {
+  @apply max-w-[1390px] mx-auto flex items-center justify-between flex-wrap px-4 md:px-8 2xl:px-0;
+}
+.navbar__container .navbar__brand {
+  @apply xl:w-[20%];
+}
+.navbar__container .navbar__content {
+  @apply w-full p-[30px] mt-4 bg-white shadow-custom xl:shadow-none rounded-md  xl:flex xl:items-center xl:justify-between xl:w-[80%] xl:mt-0 xl:p-0;
+}
+.navbar__content ul {
+  @apply flex flex-col gap-5 xl:flex-row xl:gap-10;
+}
+.navbar__menu ul #item__dropdown a {
+  @apply flex items-center gap-3;
+}
+.navbar__container .navbar__controls {
+  @apply flex justify-start items-center gap-6 mt-7 xl:mt-0;
+}
+.navbar__container .navbar__controls .icon__search {
+  @apply hidden md:flex h-[38px] w-[38px] items-center justify-center;
+}
+.navbar__controls .navbar__control-right {
+  @apply w-full flex items-center justify-between xl:flex-row-reverse xl:gap-6;
+}
+.navbar__controls .navbar__account {
+  @apply flex items-center gap-6;
+}
+.navbar__controls .navbar__account a:last-child {
+  @apply flex items-center justify-center rounded-full bg-blue-600 px-[30px] py-2.5  text-white;
+}
