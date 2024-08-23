@@ -94,11 +94,42 @@
                 <li><a href="#!">Features</a></li>
                 <li><a href="#!">Blog</a></li>
                 <li><a href="#!">Docs</a></li>
-                <li id="item__dropdown">
-                  <a href="#!"
-                    >Pages
-                    <span><img src="../img/svgexport-1 (1).svg" alt="" /></span
-                  ></a>
+                <li class="relative">
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                  >
+                    <a href="#!"
+                      >Pages
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden">
+                    <ul
+                      aria-labelledby="dropdownLargeButton"
+                      class="dropdown__menuItem"
+                    >
+                      <li>
+                        <a href="#">Blog Grid</a>
+                      </li>
+                      <li>
+                        <a href="#">Sign In</a>
+                      </li>
+                      <li>
+                        <a href="#">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="#">Docs</a>
+                      </li>
+                      <li>
+                        <a href="#">Support</a>
+                      </li>
+                      <li>
+                        <a href="#">404</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li><a href="#!">Support</a></li>
               </ul>

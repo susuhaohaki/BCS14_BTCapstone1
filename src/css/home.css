@@ -32,8 +32,14 @@ header {
 .navbar__content ul {
   @apply flex flex-col gap-5 xl:flex-row xl:gap-10;
 }
-.navbar__menu ul #item__dropdown a {
+.navbar__menu a:hover {
+  @apply text-blue-500;
+}
+.navbar__menu ul li:nth-child(5) a {
   @apply flex items-center gap-3;
+}
+.navbar__menu ul li:nth-child(5) a i {
+  font-size: 12px;
 }
 .navbar__container .navbar__controls {
   @apply flex justify-start items-center gap-6 mt-7 xl:mt-0;
@@ -42,13 +48,24 @@ header {
   @apply hidden md:flex h-[38px] w-[38px] items-center justify-center;
 }
 .navbar__controls .navbar__control-right {
-  @apply w-full flex items-center justify-between xl:flex-row-reverse xl:gap-6;
+  @apply w-full flex items-center justify-between xl:flex-row-reverse xl:w-auto xl:gap-6;
 }
 .navbar__controls .navbar__account {
   @apply flex items-center gap-6;
 }
 .navbar__controls .navbar__account a:last-child {
   @apply flex items-center justify-center rounded-full bg-blue-600 px-[30px] py-2.5  text-white;
+}
+.navbar__menu #dropdownNavbar {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  top: 32px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  @apply min-w-[320px] md:min-w-[644px] xl:min-w-[236px] py-[20px] px-[32px] bg-white shadow-lg shadow-black/5 xl:shadow-none border-gray-200;
+}
+.navbar__menu .dropdown__menuItem {
+  @apply flex flex-col gap-4;
 }
 
 /* BACKTOTOP */
@@ -78,4 +95,25 @@ header {
   text-align: center;
   color: white;
   @apply shadow-md;
+}
+
+@media (min-width: 1280px) {
+  .navbar__menu #dropdownNavbar::before {
+    content: " ";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    @apply border-gray-200;
+    background-color: #fff;
+    top: -0.375rem;
+    left: 2.5rem;
+    rotate: 45deg;
+    z-index: 1;
+  }
+  .navbar__menu #dropdownNavbar {
+    inset: 52px auto auto 88px !important;
+  }
 }
