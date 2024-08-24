@@ -17,7 +17,7 @@ body {
 
 /* HEADER */
 header {
-  @apply w-full py-7 fixed left-0 top-0 z-50;
+  @apply w-full py-7 fixed left-0 top-0 z-[999] bg-white;
   transition: all, 0.3s;
 }
 .navbar__container {
@@ -62,12 +62,91 @@ header {
   top: 32px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  @apply min-w-[320px] md:min-w-[644px] xl:min-w-[236px] py-[20px] px-[32px] bg-white shadow-lg shadow-black/5 xl:shadow-none border-gray-200;
+  @apply w-full md:min-w-[644px] xl:min-w-[236px] py-[20px] px-[32px] bg-white shadow-lg shadow-black/5 xl:shadow-none border-gray-200;
 }
 .navbar__menu .dropdown__menuItem {
   @apply flex flex-col gap-4;
 }
+/* BANNER */
+.banner {
+  @apply mx-auto max-w-[1390px] pb-[80px] xl:pb-[100px] px-4 md:px-8 xl:px-0 pt-[140px] md:pt-40 xl:pt-[184px] md:flex md:items-center xl:gap-[8.125rem];
+}
+.banner .banner__content {
+  @apply md:w-[50%];
+}
+.banner h4 {
+  @apply mb-[18px] text-lg font-medium text-black;
+}
+.banner h1 {
+  @apply pr-16 mb-5 text-3xl font-bold text-black;
+}
+.banner__content a {
+  @apply mt-10 inline-block rounded-full bg-black px-[1.875rem] py-2.5 text-white duration-300 ease-in-out;
+}
+.banner h1 span {
+  @apply relative ml-2.5 inline-block before:absolute;
+}
+.banner h1 span::before {
+  content: "";
+  @apply absolute bottom-[10px] left-0 -z-10 h-3 w-full bg-[#adfff8];
+}
+.banner .banner__img {
+  @apply hidden md:block md:w-[50%] xl:-mr-[1.875rem] relative;
+}
+.banner .banner__img img:first-child {
+  @apply w-full h-full shadow-solid_l;
+}
+.banner .banner__img img:nth-child(2) {
+  @apply absolute top-0 -left-[2.875rem];
+}
+.banner .banner__img img:nth-child(3) {
+  @apply absolute right-0 bottom-0;
+}
+.banner .banner__img img:nth-child(4) {
+  @apply absolute bottom-0 -right-[1.625rem];
+}
 
+/* BRAND */
+.brand {
+  @apply px-4 md:px-8 mx-auto py-11 bg-[#fbfbfb] border-y-[1px] border-solid border-[#eee];
+}
+.brand .brand__list {
+  @apply grid grid-cols-3 gap-[1.875rem] lg:gap-[3.125rem] md:grid-cols-6;
+}
+.brand__list a {
+  @apply block h-10 w-[98px];
+}
+.brand__list a img {
+  @apply opacity-65 w-full h-full transition-all duration-300 hover:opacity-100;
+}
+
+.animate__animated {
+  animation-duration: 1600ms;
+}
+/* Custom delays */
+.animate__delay-1 {
+  animation-delay: 0ms;
+}
+
+.animate__delay-2 {
+  animation-delay: 300ms;
+}
+
+.animate__delay-3 {
+  animation-delay: 600ms;
+}
+
+.animate__delay-4 {
+  animation-delay: 900ms;
+}
+
+.animate__delay-5 {
+  animation-delay: 1200ms;
+}
+
+.animate__delay-6 {
+  animation-delay: 1500ms;
+}
 /* BACKTOTOP */
 .backToTop {
   position: fixed;
