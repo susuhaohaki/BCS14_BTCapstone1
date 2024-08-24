@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* COMMAND */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,18 @@ body {
   color: #757693;
   line-height: 26px;
 }
-
+.title {
+  @apply text-center;
+}
+.title span {
+  @apply mb-4 rounded-full px-[1.125rem] py-[0.375rem] bg-[#edf5ff] inline-block;
+}
+.title h2 {
+  @apply mb-4 text-3xl font-bold text-black xl:text-[44px] xl:leading-[55px];
+}
+.title p {
+  @apply mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%];
+}
 /* HEADER */
 header {
   @apply w-full py-7 fixed left-0 top-0 z-[999] bg-white;
@@ -69,16 +81,16 @@ header {
 }
 /* BANNER */
 .banner {
-  @apply mx-auto max-w-[1390px] pb-[80px] xl:pb-[100px] px-4 md:px-8 xl:px-0 pt-[140px] md:pt-40 xl:pt-[184px] md:flex md:items-center xl:gap-[8.125rem];
+  @apply px-4 mx-auto max-w-[1390px] pb-[80px] xl:pb-[100px] md:px-8 xl:px-0 pt-[140px] md:pt-40 xl:pt-[184px] md:flex md:items-center xl:gap-[8.125rem];
 }
 .banner .banner__content {
-  @apply md:w-[50%];
+  @apply md:w-[50%] xl:max-w-[630px];
 }
 .banner h4 {
   @apply mb-[18px] text-lg font-medium text-black;
 }
 .banner h1 {
-  @apply pr-16 mb-5 text-3xl font-bold text-black;
+  @apply pr-16 mb-5 text-3xl font-bold text-black xl:text-[44px] xl:leading-[58px];
 }
 .banner__content a {
   @apply mt-10 inline-block rounded-full bg-black px-[1.875rem] py-2.5 text-white duration-300 ease-in-out;
@@ -105,13 +117,12 @@ header {
 .banner .banner__img img:nth-child(4) {
   @apply absolute bottom-0 -right-[1.625rem];
 }
-
 /* BRAND */
 .brand {
-  @apply px-4 md:px-8 mx-auto py-11 bg-[#fbfbfb] border-y-[1px] border-solid border-[#eee];
+  @apply px-4 md:px-8 mx-auto py-11 bg-[#fbfbfb] border-y-[1px] border-solid border-[#eee] xl:px-0;
 }
 .brand .brand__list {
-  @apply grid grid-cols-3 gap-[1.875rem] lg:gap-[3.125rem] md:grid-cols-6;
+  @apply grid grid-cols-3 gap-[1.875rem] lg:gap-[3.125rem] xl:gap-[7.25rem] md:grid-cols-6 max-w-[1390px] mx-auto;
 }
 .brand__list a {
   @apply block h-10 w-[98px];
@@ -119,34 +130,29 @@ header {
 .brand__list a img {
   @apply opacity-65 w-full h-full transition-all duration-300 hover:opacity-100;
 }
-
-.animate__animated {
-  animation-duration: 1600ms;
+/* FEATURES */
+.features {
+  @apply mx-auto max-w-[1315px] px-4 md:px-8 xl:px-0 py-20;
 }
-/* Custom delays */
-.animate__delay-1 {
-  animation-delay: 0ms;
+.features__content {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[1.875rem] xl:gap-[3.125rem] mt-[50px] xl:mt-20;
 }
-
-.animate__delay-2 {
-  animation-delay: 300ms;
+.features__content .features__items {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(8, 14, 40, 0.04) 0px 6px 90px 0px;
+  @apply rounded-lg border border-white bg-white p-[1.875rem] xl:p-[50px] transition-all;
 }
-
-.animate__delay-3 {
-  animation-delay: 600ms;
+.features__content .features__items:hover {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(8, 14, 40, 0.1) 0px 6px 90px 0px;
 }
-
-.animate__delay-4 {
-  animation-delay: 900ms;
+.features__items .feature__item-img {
+  @apply flex h-16 w-16 items-center justify-center rounded-[4px] bg-[#006bff];
 }
-
-.animate__delay-5 {
-  animation-delay: 1200ms;
+.features__items h3 {
+  @apply mb-5 mt-[30px] text-xl font-semibold text-black xl:text-[26px];
 }
 
-.animate__delay-6 {
-  animation-delay: 1500ms;
-}
 /* BACKTOTOP */
 .backToTop {
   position: fixed;
