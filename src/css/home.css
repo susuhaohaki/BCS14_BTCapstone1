@@ -132,7 +132,7 @@ header {
 }
 /* FEATURES */
 .features {
-  @apply mx-auto max-w-[1315px] px-4 md:px-8 xl:px-0 py-20;
+  @apply mx-auto max-w-[1315px] px-4 md:px-8 xl:px-0 py-20 lg:py-[6.25rem] xl:py-[7.5rem];
 }
 .features__content {
   @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[1.875rem] xl:gap-[3.125rem] mt-[50px] xl:mt-20;
@@ -152,7 +152,68 @@ header {
 .features__items h3 {
   @apply mb-5 mt-[30px] text-xl font-semibold text-black xl:text-[26px];
 }
-
+/* START UP  */
+.startup {
+  @apply flex items-center mx-auto gap-8 px-4 md:px-8 xl:px-0  max-w-[1235px] overflow-hidden pb-20 xl:pb-[120px];
+}
+.startup .startup__img {
+  @apply hidden md:block md:w-1/2;
+}
+.startup .startup__content h4 {
+  @apply font-medium uppercase text-black;
+}
+.startup .startup__content h4 span {
+  @apply mb-4 mr-4 inline-flex rounded-full bg-[#20c5a8] px-[18px] py-1 text-[12px] leading-[20px] uppercase text-white;
+}
+.startup .startup__content h2 {
+  @apply relative mb-6 text-3xl font-bold text-black;
+}
+.startup .startup__content h2 span {
+  @apply relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-10 before:h-3 before:w-full before:bg-[#adfff8];
+}
+.startup__content .step__item {
+  @apply mt-[30px] flex items-center gap-5;
+}
+.startup__content .step__item .step__number {
+  @apply flex h-[60px] w-[60px] items-center justify-center rounded-[50%] border border-gray-200;
+}
+.startup__content .step__item .step__number p {
+  @apply text-[20px] leading-[32px] font-semibold text-black dark:text-white;
+}
+.startup__content .step__item .step__desc {
+  @apply w-3/4;
+}
+.startup__content .step__item .step__desc h3 {
+  @apply mb-0.5 text-[20px] leading-[32px] text-black;
+}
+/* INTEGRATION */
+.integration {
+  @apply mx-auto max-w-[1235px] overflow-hidden px-4 md:px-8 xl:px-0 flex items-center gap-8 lg:gap-[8.125rem];
+}
+.integration .integration__content {
+  @apply md:w-1/2;
+}
+.integration .integration__content h4 {
+  @apply font-medium uppercase text-black;
+}
+.integration .integration__content h2 {
+  @apply relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-[44px] xl:leading-[58px];
+}
+.integration .integration__content h2 span {
+  @apply relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-10 before:h-3 before:w-full before:bg-[#ffeac2];
+}
+.integration .integration__content a {
+  @apply mt-[30px] inline-flex items-center gap-2.5 text-black hover:text-blue-500 dark:text-white;
+}
+.integration__content a span {
+  @apply duration-300;
+}
+.integration .integration__content a:hover span {
+  @apply pr-2;
+}
+.integration .integration__img {
+  @apply relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2;
+}
 /* BACKTOTOP */
 .backToTop {
   position: fixed;
