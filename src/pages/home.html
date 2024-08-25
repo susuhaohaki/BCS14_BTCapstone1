@@ -49,6 +49,11 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
     />
+    <!-- flowbite css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <!-- ANIMATION CSS CDN -->
     <link
       rel="stylesheet"
@@ -343,6 +348,198 @@
       </div>
       <div class="integration__img">
         <img src="../img/about-light-02.svg" alt="" />
+      </div>
+    </section>
+    <!-- TABS -->
+    <section class="tabs">
+      <div class="relative">
+        <div
+          class="absolute -top-16 -z-10 left-[50%] -translate-x-[50%] h-[350px] w-[90%]"
+        >
+          <img src="../img/shape-dotted-light.svg" alt="" />
+        </div>
+        <div class="tabs__list">
+          <ul
+            class="flex md:items-center justify-center flex-wrap md:flex-nowrap w-full xl:gap-[3.125rem]"
+            id="default-styled-tab"
+            data-tabs-toggle="#default-styled-tab-content"
+            data-tabs-active-classes=""
+            data-tabs-inactive-classes=""
+            role="tablist"
+          >
+            <li
+              class="tab__item w-full relative before:absolute before:bottom-0 before:left-0 before:h-1 before:w-full before:rounded-tl-[4px] before:rounded-tr-[4px] before:bg-primary"
+              id="tabItem1"
+              role="presentation"
+            >
+              <button
+                class=""
+                id="profile-styled-tab"
+                data-tabs-target="#styled-profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                <div class="tab__item-content">
+                  <div class="tab__item-number">
+                    <p>01</p>
+                  </div>
+                  <div class="tab__item-desc">
+                    <p
+                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                    >
+                      Clean User Interface
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="tab__item" id="tabItem2" role="presentation">
+              <button
+                class=""
+                id="dashboard-styled-tab"
+                data-tabs-target="#styled-dashboard"
+                type="button"
+                role="tab"
+                aria-controls="dashboard"
+                aria-selected="false"
+              >
+                <div class="tab__item-content">
+                  <div class="tab__item-number">
+                    <p>02</p>
+                  </div>
+                  <div class="tab__item-desc">
+                    <p
+                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                    >
+                      Essential Business Pages
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li class="tab__item" id="tabItem3" role="presentation">
+              <button
+                class=""
+                id="contacts-styled-tab"
+                data-tabs-target="#styled-contacts"
+                type="button"
+                role="tab"
+                aria-controls="contacts"
+                aria-selected="false"
+              >
+                <div class="tab__item-content">
+                  <div class="tab__item-number">
+                    <p>03</p>
+                  </div>
+                  <div class="tab__item-desc">
+                    <p
+                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                    >
+                      Fully Functional Integrations
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="default-styled-tab-content">
+          <div
+            class="hidden max-w-[1154px] mx-auto"
+            id="styled-profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="tabs__content">
+              <div class="tabs__content-left">
+                <h2>
+                  Solid UI with Solid <br />
+                  Features.
+                </h2>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                </p>
+                <p class="w-11/12">
+                  Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                  nec finibus sagittis. Nulla ligula nunc egestas ut.
+                </p>
+              </div>
+              <div
+                class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
+              >
+                <img src="../img/features-light-01.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden max-w-[1154px] mx-auto"
+            id="styled-dashboard"
+            role="tabpanel"
+            aria-labelledby="dashboard-tab"
+          >
+            <div class="tabs__content">
+              <div class="tabs__content-left">
+                <h2>Pages and UI Components You Need for a SaaS.</h2>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                </p>
+                <p class="w-11/12">
+                  Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                  nec finibus sagittis. Nulla ligula nunc egestas ut.
+                </p>
+              </div>
+              <div
+                class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
+              >
+                <img src="../img/features-light-01.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden max-w-[1154px] mx-auto"
+            id="styled-settings"
+            role="tabpanel"
+            aria-labelledby="settings-tab"
+          >
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              This is some placeholder content the
+              <strong class="font-medium text-gray-800 dark:text-white"
+                >Settings tab's associated content</strong
+              >. Clicking another tab will toggle the visibility of this one for
+              the next. The tab JavaScript swaps classes to control the content
+              visibility and styling.
+            </p>
+          </div>
+          <div
+            class="hidden max-w-[1154px] mx-auto"
+            id="styled-contacts"
+            role="tabpanel"
+            aria-labelledby="contacts-tab"
+          >
+            <div class="tabs__content">
+              <div class="tabs__content-left">
+                <h2>Functional Blog, DB, Auth and Many More</h2>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                </p>
+                <p class="w-11/12">
+                  Nam id eleifend dui, id iaculis purus. Etiam lobortis neque
+                  nec finibus sagittis. Nulla ligula nunc egestas ut.
+                </p>
+              </div>
+              <div
+                class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
+              >
+                <img src="../img/features-light-01.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- BACK TO TOP  -->

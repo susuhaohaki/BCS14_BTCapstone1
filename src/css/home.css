@@ -147,7 +147,7 @@ header {
     rgba(8, 14, 40, 0.1) 0px 6px 90px 0px;
 }
 .features__items .feature__item-img {
-  @apply flex h-16 w-16 items-center justify-center rounded-[4px] bg-[#006bff];
+  @apply flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary;
 }
 .features__items h3 {
   @apply mb-5 mt-[30px] text-xl font-semibold text-black xl:text-[26px];
@@ -213,6 +213,40 @@ header {
 }
 .integration .integration__img {
   @apply relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2;
+}
+
+/* TABS */
+.tabs {
+  @apply mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0 pb-20 pt-[4.625rem] lg:pb-[5.625rem];
+}
+.tabs .tabs__list {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(45, 74, 170, 0.08) 0px 8px 24px 0px;
+  @apply md:flex-row flex-col flex flex-wrap justify-center rounded-[10px] border border-gray-200 bg-white w-full mb-[60px] xl:mb-[86px] overflow-hidden;
+}
+.tabs__list .tab__item {
+  @apply w-full border-b border-gray-200 xl:w-auto xl:border-none;
+}
+.tabs__list .tab__item button {
+  @apply w-full;
+}
+.tabs__list .tab__item button .tab__item-content {
+  @apply flex items-center gap-4 px-6 py-2 xl:px-[54px] xl:py-5;
+}
+.tab__item-content .tab__item-number {
+  @apply h-[50px] w-[50px] flex items-center justify-center rounded-[50%] border border-gray-200 text-black font-medium text-[18px] leading-[26px];
+}
+.tab__item-content .tab__item-desc {
+  @apply md:w-3/5 lg:w-auto;
+}
+.tabs #default-styled-tab-content .tabs__content {
+  @apply flex items-center gap-8 lg:gap-[4.75rem];
+}
+.tabs__content .tabs__content-left {
+  @apply md:w-1/2;
+}
+.tabs .tabs__content-left h2 {
+  @apply mb-7 text-3xl font-bold text-black xl:text-[40px] xl:leading-[52px];
 }
 /* BACKTOTOP */
 .backToTop {
