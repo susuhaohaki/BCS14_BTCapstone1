@@ -248,6 +248,35 @@ header {
 .tabs .tabs__content-left h2 {
   @apply mb-7 text-3xl font-bold text-black xl:text-[40px] xl:leading-[52px];
 }
+
+/* TRUSTED */
+.trusted {
+  @apply px-4 py-20 md:px-8 lg:py-[5.625rem] 2xl:px-0;
+}
+.trusted .trusted__container {
+  @apply relative z-10 mx-auto max-w-[1390px] rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] py-[5.625rem] xl:py-[6.875rem];
+}
+.trusted__container .trusted__content {
+  @apply mx-auto mb-[3.125rem] px-4 text-center md:w-4/5 md:px-0 lg:mb-[4.375rem] lg:w-2/3 xl:w-1/2;
+}
+.trusted__container .trusted__content h2 {
+  @apply mb-4 text-3xl font-bold text-black xl:text-[44px] xl:leading-[55px];
+}
+.trusted__container .trusted__content p {
+  @apply mx-auto lg:w-11/12;
+}
+.trusted__container .trusted__stats {
+  @apply flex flex-wrap justify-center gap-8 lg:gap-[10.625rem];
+}
+.trusted__stats .trusted__stats-item {
+  @apply text-center;
+}
+.trusted__stats .trusted__stats-item h3 {
+  @apply mb-2.5 text-3xl font-bold text-black xl:text-[44px] xl:leading-[55px];
+}
+.trusted__stats .trusted__stats-item p {
+  @apply text-lg lg:text-[22px] xl:leading-[35px];
+}
 /* BACKTOTOP */
 .backToTop {
   position: fixed;
