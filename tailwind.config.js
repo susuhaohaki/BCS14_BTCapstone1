@@ -9,6 +9,23 @@ module.exports = {
       },
       backgroundColor: {
         primary: "#006bff",
+        dark: "#181c31",
+        blacksection: "#1c2136",
+        hoverdark: "#252a42",
+        titlebgdark: "#46495a",
+        btndark: "#292e45",
+      },
+      borderColor: {
+        strokedark: "#2d2f40",
+      },
+      fontSize: {
+        hero: "44px",
+      },
+      lineHeight: {
+        hero: "58px",
+      },
+      stroke: {
+        strokedark: "#2d2f40",
       },
     },
   },

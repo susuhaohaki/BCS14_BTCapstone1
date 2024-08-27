@@ -98,7 +98,7 @@
               />
             </svg>
           </button>
-          <div class="navbar__content hidden" id="navbar-default">
+          <div class="navbar__content dark:bg-dark hidden" id="navbar-default">
             <div class="navbar__menu">
               <ul>
                 <li><a href="#!">Home</a></li>
@@ -108,6 +108,7 @@
                 <li class="relative">
                   <button
                     id="dropdownNavbarLink"
+                    class="dark:bg-dark"
                     data-dropdown-toggle="dropdownNavbar"
                   >
                     <a href="#!"
@@ -192,15 +193,19 @@
     <!-- BANNER -->
     <section class="banner">
       <div class="banner__content">
-        <h4>🔥 Solid - A Complete SaaS Starter Template for SaaS</h4>
-        <h1>Robust SaaS Boilerplate and Starter for<span>Next.js</span></h1>
+        <h4 class="dark:text-white">
+          🔥 Solid - A Complete SaaS Starter Template for SaaS
+        </h4>
+        <h1 class="dark:text-white">
+          Robust SaaS Boilerplate and Starter for<span>Next.js</span>
+        </h1>
         <p>
           Packed with all the key integrations you need for swift SaaS startup
           launch, including - Authentication, Database, Sanity Blog, Essential
           UI Components, Business Pages and More. Built-winth - Next.js, React
           18 and TypeScript.
         </p>
-        <a href="#!">Get Started</a>
+        <a class="dark:bg-[#292e45]" href="#!">Get Started</a>
       </div>
       <div class="banner__img">
         <img
@@ -219,33 +224,61 @@
       </div>
     </section>
     <!-- BRAND -->
-    <section class="brand">
+    <section class="brand dark:bg-dark dark:border-y-strokedark">
       <div class="brand__list">
         <a href="#!" class="animate__delay-1"
-          ><img src="../img/brand-light-01.svg" alt="brand1"
-        /></a>
+          ><img
+            src="../img/brand-light-01.svg"
+            alt="brand1"
+            class="img-light"
+          />
+          <img src="../img/brand-dark-01.svg" class="img-dark hidden" alt="" />
+        </a>
         <a href="#!" class="animate__delay-2"
-          ><img src="../img/brand-light-02.svg" alt="brand2"
+          ><img
+            src="../img/brand-light-02.svg"
+            alt="brand2"
+            class="img-light" />
+          <img src="../img/brand-dark-02.svg" class="img-dark hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-3"
-          ><img src="../img/brand-light-03.svg" alt="brand3"
+          ><img
+            src="../img/brand-light-03.svg"
+            alt="brand3"
+            class="img-light" />
+          <img src="../img/brand-dark-03.svg" class="img-dark hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-4"
-          ><img src="../img/brand-light-04.svg" alt="brand4"
+          ><img
+            src="../img/brand-light-04.svg"
+            alt="brand4"
+            class="img-light" />
+          <img src="../img/brand-dark-04.svg" class="img-dark hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-5"
-          ><img src="../img/brand-light-05.svg" alt="brand5"
+          ><img
+            src="../img/brand-light-05.svg"
+            alt="brand5"
+            class="img-light" />
+          <img src="../img/brand-dark-05.svg" class="img-dark hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-6"
-          ><img src="../img/brand-light-06.svg" alt="brand6"
+          ><img
+            src="../img/brand-light-06.svg"
+            alt="brand6"
+            class="img-light" />
+          <img src="../img/brand-dark-06.svg" class="img-dark hidden" alt=""
         /></a>
       </div>
     </section>
     <!-- FEATURES-->
     <section class="features">
       <div class="features__title title z-1">
-        <span>SOLID FEATURES</span>
-        <h2>Core Features of Solid</h2>
+        <span
+          class="dark:bg-dark dark:border dark:border-strokedark dark:text-white"
+          >SOLID FEATURES</span
+        >
+        <h2 class="dark:text-white">Core Features of Solid</h2>
         <p>
           Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
           convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
@@ -253,61 +286,73 @@
         </p>
       </div>
       <div class="features__content">
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-01.svg" alt="" />
           </div>
-          <h3>Crafted for SaaS</h3>
+          <h3 class="dark:text-white">Crafted for SaaS</h3>
           <p>
             Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
             convallis tortor.
           </p>
         </div>
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-02.svg" alt="" />
           </div>
-          <h3>High-quality Design</h3>
+          <h3 class="dark:text-white">High-quality Design</h3>
           <p>
             Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
             convallis tortor.
           </p>
         </div>
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-03.svg" alt="" />
           </div>
-          <h3>Next.js + TypeScript</h3>
+          <h3 class="dark:text-white">Next.js + TypeScript</h3>
           <p>
             Lorem ipsum dolor sit amet elit , consectetur adipiscing elit. In
             convallis tortor.
           </p>
         </div>
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-04.svg" alt="" />
           </div>
-          <h3>Sanity Blog and Docs</h3>
+          <h3 class="dark:text-white">Sanity Blog and Docs</h3>
           <p>
             Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
             convallis tortor.
           </p>
         </div>
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-05.svg" alt="" />
           </div>
-          <h3>DB, Auth and Stripe</h3>
+          <h3 class="dark:text-white">DB, Auth and Stripe</h3>
           <p>
             Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
             convallis tortor.
           </p>
         </div>
-        <div class="features__items">
+        <div
+          class="features__items dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark"
+        >
           <div class="feature__item-img">
             <img src="../img/icon-06.svg" alt="" />
           </div>
-          <h3>Regular Free Updates</h3>
+          <h3 class="dark:text-white">Regular Free Updates</h3>
           <p>
             Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
             convallis tortor.
@@ -318,33 +363,56 @@
     <!-- STARTUP -->
     <section class="startup">
       <div class="startup__img">
-        <img src="../img/about-light-01.png" alt="" class="img-light" />
         <img
+          alt="About"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
+          src="../img/about-light-01.png"
+          class="img-light"
+        />
+        <img
+          alt="About"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
           src="../img/about-dark-01 (1).png"
-          alt=""
           class="img-dark hidden"
         />
       </div>
       <div class="startup__content">
-        <h4><span>new</span>SaaS Boilerplate for Next.js</h4>
-        <h2>A Complete Solution for <span>SaaS Startup</span></h2>
+        <h4 class="text-black dark:text-white">
+          <span>new</span>SaaS Boilerplate for Next.js
+        </h4>
+        <h2 class="text-black dark:text-white">
+          A Complete Solution for
+          <span class="dark:before:bg-titlebgdark">SaaS Startup</span>
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies
           lacus non fermentum ultrices. Fusce consectetur le.
         </p>
         <div class="step__item">
-          <div class="step__number"><p>01</p></div>
+          <div
+            class="step__number border-gray-200 dark:border-strokedark dark:bg-blacksection"
+          >
+            <p class="text-black dark:text-white">01</p>
+          </div>
           <div class="step__desc">
-            <h3>
+            <h3 class="dark:text-white">
               Mailchimp for Newsletter Emails + SMTP for Transactional Emails
             </h3>
             <p>Ut ultricies lacus non fermentum ultrices.</p>
           </div>
         </div>
         <div class="step__item">
-          <div class="step__number"><p>02</p></div>
+          <div
+            class="step__number border-gray-200 dark:border-strokedark dark:bg-blacksection"
+          >
+            <p class="text-black dark:text-white">02</p>
+          </div>
           <div class="step__desc">
-            <h3>Algolia Integration for Site Search</h3>
+            <h3 class="dark:text-white">Algolia Integration for Site Search</h3>
             <p>consectetur adipiscing elit fermentum ultricies.</p>
           </div>
         </div>
@@ -354,7 +422,10 @@
     <section class="integration">
       <div class="integration__content">
         <h4>Launch Your SaaS Fast</h4>
-        <h2>Packed with All Essential <span>Integrations</span></h2>
+        <h2>
+          Packed with All Essential
+          <span class="dark:before:bg-titlebgdark">Integrations</span>
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies
           lacus non fermentum ultrices. Fusce consectetur le.
@@ -406,7 +477,7 @@
                   </div>
                   <div class="tab__item-desc">
                     <p
-                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                      class="text-sm font-medium text-black dark:text-white xl:text-[16px] xl:leading-[26px]"
                     >
                       Clean User Interface
                     </p>
@@ -430,7 +501,7 @@
                   </div>
                   <div class="tab__item-desc">
                     <p
-                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                      class="text-sm font-medium text-black dark:text-white xl:text-[16px] xl:leading-[26px]"
                     >
                       Essential Business Pages
                     </p>
@@ -454,7 +525,7 @@
                   </div>
                   <div class="tab__item-desc">
                     <p
-                      class="text-sm font-medium text-black xl:text-[16px] xl:leading-[26px]"
+                      class="text-sm font-medium text-black dark:text-white xl:text-[16px] xl:leading-[26px]"
                     >
                       Fully Functional Integrations
                     </p>
@@ -629,7 +700,12 @@
         <img
           src="../img/shape-dotted-light-02.svg"
           alt=""
-          class="absolute left-0 top-0 -z-10 h-full w-full object-fill"
+          class="img-light absolute left-0 top-0 -z-10 h-full w-full object-fill"
+        />
+        <img
+          src="../img/shape-dotted-dark-02.svg"
+          alt=""
+          class="img-dark hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
         />
       </div>
     </section>
@@ -692,6 +768,27 @@
             <div class="integerations__item-img">
               <img src="../img/brand-12.svg" />
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JOIN -->
+    <section class="join">
+      <div class="join__container">
+        <div class="join__content">
+          <div class="join__left">
+            <h2>Join With Us Today &amp; Increase Your Productivity</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+              ante in maximus.
+            </p>
+          </div>
+          <div class="join__right">
+            <img src="../img/shape-06.png" alt="" />
+            <a href="#!"
+              >Sign up free <i class="fa-sharp fa-regular fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>

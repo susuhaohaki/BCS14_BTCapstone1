@@ -16,6 +16,7 @@ let elementsImgDark = document.querySelectorAll(".img-dark");
 let elementBody = document.getElementById("body");
 function toggleElements() {
   elementBody.classList.toggle("dark");
+  elementBody.classList.toggle("bg-dark");
   elementToggleDark.classList.toggle("hidden");
   elementToggleLight.classList.toggle("hidden");
   elementsImgLight.forEach((img) => img.classList.toggle("hidden"));
