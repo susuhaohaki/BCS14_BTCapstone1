@@ -8,11 +8,27 @@ window.addEventListener("scroll", function () {
     header.classList.add("py-7");
   }
 });
+//TOGGLE DARK LIGHT
+let elementToggleDark = document.getElementById("toggleDark");
+let elementToggleLight = document.getElementById("toggleLight");
+let elementsImgLight = document.querySelectorAll(".img-light");
+let elementsImgDark = document.querySelectorAll(".img-dark");
+let elementBody = document.getElementById("body");
+function toggleElements() {
+  elementBody.classList.toggle("dark");
+  elementToggleDark.classList.toggle("hidden");
+  elementToggleLight.classList.toggle("hidden");
+  elementsImgLight.forEach((img) => img.classList.toggle("hidden"));
+  elementsImgDark.forEach((img) => img.classList.toggle("hidden"));
+}
 
+elementToggleDark.onclick = toggleElements;
+elementToggleLight.onclick = toggleElements;
+
+//FEATURE
 let elementTabItem1 = document.getElementById("tabItem1");
 let elementTabItem2 = document.getElementById("tabItem2");
 let elementTabItem3 = document.getElementById("tabItem3");
-
 elementTabItem1.onclick = function () {
   elementTabItem2.classList.remove(
     "w-full",
@@ -51,7 +67,6 @@ elementTabItem1.onclick = function () {
     "before:bg-primary"
   );
 };
-
 elementTabItem2.onclick = function () {
   elementTabItem1.classList.remove(
     "w-full",

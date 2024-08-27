@@ -63,14 +63,15 @@
     <link href="../css/home-output.css" rel="stylesheet" />
     <title>Solid layout</title>
   </head>
-  <body class="h-[20000px]">
+  <body id="body">
     <!-- HEADER -->
     <header>
       <nav>
         <div class="navbar__container">
           <div class="navbar__brand">
             <a href="#!">
-              <img src="../img/logo-light.svg" alt="" />
+              <img src="../img/logo-light.svg" alt="" class="img-light" />
+              <img src="../img/logo-dark.svg" alt="" class="img-dark hidden" />
             </a>
           </div>
           <button
@@ -176,8 +177,11 @@
                   <a href="#!" class="font-medium">Sign In</a>
                   <a href="#!">Sign Up</a>
                 </div>
-                <div class="navbar__darklight xl:mr-[6px] cursor-pointer">
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDark">
                   <img src="../img/icon-moon.svg" alt="" />
+                </div>
+                <div class="hidden xl:mr-[6px] cursor-pointer" id="toggleLight">
+                  <img src="../img/icon-sun.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -199,10 +203,19 @@
         <a href="#!">Get Started</a>
       </div>
       <div class="banner__img">
-        <img src="../img/hero-light.svg" alt="" />
-        <img src="../img/shape-01.png" alt="" />
-        <img src="../img/shape-02.svg" alt="" />
-        <img src="../img/shape-03.svg" alt="" />
+        <img
+          src="../img/hero-light.svg"
+          alt=""
+          class="img-light w-full h-full shadow-solid_l"
+        />
+        <img
+          src="../img/hero-dark.svg"
+          alt=""
+          class="img-dark hidden w-full h-full shadow-solid_l"
+        />
+        <img src="../img/shape-01.png" alt="" class="shap1" />
+        <img src="../img/shape-02.svg" alt="" class="shap2" />
+        <img src="../img/shape-03.svg" alt="" class="shap3" />
       </div>
     </section>
     <!-- BRAND -->
@@ -305,7 +318,12 @@
     <!-- STARTUP -->
     <section class="startup">
       <div class="startup__img">
-        <img src="../img/about-light-01.png" alt="" />
+        <img src="../img/about-light-01.png" alt="" class="img-light" />
+        <img
+          src="../img/about-dark-01 (1).png"
+          alt=""
+          class="img-dark hidden"
+        />
       </div>
       <div class="startup__content">
         <h4><span>new</span>SaaS Boilerplate for Next.js</h4>
@@ -347,7 +365,8 @@
         ></a>
       </div>
       <div class="integration__img">
-        <img src="../img/about-light-02.svg" alt="" />
+        <img src="../img/about-light-02.svg" alt="" class="img-light" />
+        <img src="../img/about-dark-02.svg" alt="" class="img-dark hidden" />
       </div>
     </section>
     <!-- TABS -->
@@ -470,7 +489,16 @@
               <div
                 class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
               >
-                <img src="../img/features-light-01.png" alt="" />
+                <img
+                  src="../img/features-light-01.png"
+                  alt=""
+                  class="img-light"
+                />
+                <img
+                  src="../img/features-dark-01.svg"
+                  alt=""
+                  class="img-dark hidden"
+                />
               </div>
             </div>
           </div>
@@ -495,7 +523,16 @@
               <div
                 class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
               >
-                <img src="../img/features-light-01.png" alt="" />
+                <img
+                  src="../img/features-light-01.png"
+                  alt=""
+                  class="img-light"
+                />
+                <img
+                  src="../img/features-dark-01.svg"
+                  alt=""
+                  class="img-dark hidden"
+                />
               </div>
             </div>
           </div>
@@ -535,7 +572,16 @@
               <div
                 class="mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2"
               >
-                <img src="../img/features-light-01.png" alt="" />
+                <img
+                  src="../img/features-light-01.png"
+                  alt=""
+                  class="img-light"
+                />
+                <img
+                  src="../img/features-dark-01.svg"
+                  alt=""
+                  class="img-dark hidden"
+                />
               </div>
             </div>
           </div>
@@ -583,8 +629,71 @@
         <img
           src="../img/shape-dotted-light-02.svg"
           alt=""
-          class="absolute left-0 top-0 -z-10"
+          class="absolute left-0 top-0 -z-10 h-full w-full object-fill"
         />
+      </div>
+    </section>
+    <!-- INTEGRATIONS -->
+    <section class="integerations">
+      <div class="integerations__title title z-1">
+        <span>INTEGRATIONS</span>
+        <h2>Packed with all the key integrations you need</h2>
+        <p>
+          Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
+          convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+          ante in maximus.
+        </p>
+      </div>
+      <div class="integerations__content">
+        <div class="integerations__img">
+          <img src="../img/shape-dotted-light-02.svg" alt="" />
+        </div>
+        <div class="integerations__list">
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-07.svg" />
+            </div>
+          </div>
+          <div class="integerations__item"></div>
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-08.svg" />
+            </div>
+          </div>
+          <div class="integerations__item">
+            <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
+          </div>
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-09.svg" />
+            </div>
+          </div>
+          <div class="integerations__item"></div>
+          <div class="integerations__item">
+            <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
+          </div>
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-10.svg" />
+            </div>
+          </div>
+          <div class="integerations__item">
+            <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
+          </div>
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-11.svg" />
+            </div>
+          </div>
+          <div class="integerations__item">
+            <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
+          </div>
+          <div class="integerations__item">
+            <div class="integerations__item-img">
+              <img src="../img/brand-12.svg" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- BACK TO TOP  -->

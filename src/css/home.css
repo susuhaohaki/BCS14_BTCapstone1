@@ -105,16 +105,14 @@ header {
 .banner .banner__img {
   @apply hidden md:block md:w-[50%] xl:-mr-[1.875rem] relative;
 }
-.banner .banner__img img:first-child {
-  @apply w-full h-full shadow-solid_l;
-}
-.banner .banner__img img:nth-child(2) {
+
+.banner .banner__img .shap1 {
   @apply absolute top-0 -left-[2.875rem];
 }
-.banner .banner__img img:nth-child(3) {
+.banner .banner__img .shap2 {
   @apply absolute right-0 bottom-0;
 }
-.banner .banner__img img:nth-child(4) {
+.banner .banner__img .shap3 {
   @apply absolute bottom-0 -right-[1.625rem];
 }
 /* BRAND */
@@ -276,6 +274,28 @@ header {
 }
 .trusted__stats .trusted__stats-item p {
   @apply text-lg lg:text-[22px] xl:leading-[35px];
+}
+/* INTEGRATIONS */
+.integerations__title h2 {
+  @apply mx-auto mb-4 font-bold text-black md:w-4/5 xl:w-1/2;
+}
+.integerations .integerations__content {
+  @apply relative z-50 mx-auto mt-[3.75rem] max-w-[1154px] px-4 md:px-8 xl:mt-20 xl:px-0;
+}
+.integerations__content .integerations__img {
+  @apply absolute -top-3/4 left-0 right-0 -z-10 mx-auto h-full w-full;
+}
+.integerations__content .integerations__list {
+  @apply flex flex-wrap justify-around gap-y-10;
+}
+.integerations__list .integerations__item {
+  @apply w-1/6;
+}
+.integerations__item .integerations__item-img {
+  @apply inline-block rounded-[10px] bg-white p-[1.125rem] shadow-md;
+}
+.integerations__item .integerations__item-img img {
+  @apply w-[50px] h-[50px] bg-transparent;
 }
 /* BACKTOTOP */
 .backToTop {
