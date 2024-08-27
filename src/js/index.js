@@ -144,3 +144,32 @@ elementTabItem3.onclick = function () {
     "before:bg-primary"
   );
 };
+
+//FAQS
+let elementFaqsRightDesc1 = document.querySelector(".faqs__right-desc1");
+let elementFaqsRightDesc2 = document.querySelector(".faqs__right-desc2");
+let elementFaqsRightDesc3 = document.querySelector(".faqs__right-desc3");
+let elementFaqsRightItem1 = document.querySelector(".faqs__right-item1");
+let elementFaqsRightItem2 = document.querySelector(".faqs__right-item2");
+let elementFaqsRightItem3 = document.querySelector(".faqs__right-item3");
+let elementthePlus1 = document.querySelector(".plus1");
+let elementthePlus2 = document.querySelector(".plus2");
+let elementthePlus3 = document.querySelector(".plus3");
+let elementtheMinus1 = document.querySelector(".minus1");
+let elementtheMinus2 = document.querySelector(".minus2");
+let elementtheMinus3 = document.querySelector(".minus3");
+elementFaqsRightItem1.onclick = function () {
+  elementFaqsRightDesc1.classList.toggle("hidden");
+  elementthePlus1.classList.toggle("hidden");
+  elementtheMinus1.classList.toggle("hidden");
+};
+elementFaqsRightItem2.onclick = function () {
+  elementFaqsRightDesc2.classList.toggle("hidden");
+  elementthePlus2.classList.toggle("hidden");
+  elementtheMinus2.classList.toggle("hidden");
+};
+elementFaqsRightItem3.onclick = function () {
+  elementFaqsRightDesc3.classList.toggle("hidden");
+  elementthePlus3.classList.toggle("hidden");
+  elementtheMinus3.classList.toggle("hidden");
+};
