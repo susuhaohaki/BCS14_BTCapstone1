@@ -8,6 +8,8 @@ module.exports = {
         solid_l: "0px 10px 120px 0px rgba(45, 74, 170, 0.1)",
         "solid-8":
           "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(45, 74, 170, 0.06) 0px 12px 120px 0px",
+        "solid-9":
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(45, 74, 170, 0.06) 0px 12px 30px 0px",
       },
       backgroundColor: {
         primary: "#006bff",

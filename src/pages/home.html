@@ -54,6 +54,9 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- slick-carousel  -->
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
     <!-- ANIMATION CSS CDN -->
     <link
       rel="stylesheet"
@@ -917,6 +920,84 @@
         </div>
       </div>
     </section>
+    <!-- TESTIMONIALS -->
+    <section class="testimonitals">
+      <div class="title z-10">
+        <span>TESTIMONIALS</span>
+        <h2>Client’s Testimonials</h2>
+        <p>
+          Lorem ipsum dolor sit amet elit, consectetur adipiscing elit. In
+          convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+          ante in maximus.
+        </p>
+      </div>
+      <div class="testimonitals__content">
+        <div class="testimonitals__item">
+          <div class="testimonitals__item-title">
+            <div>
+              <h3 class="mb-1.5 text-metatitle3 text-black dark:text-white">
+                Devid Smith
+              </h3>
+              <p>Founter @democompany</p>
+            </div>
+            <img class="h-[60px] w-[60px]" src="../img/user-01.png" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+            nisi, convallis fringilla ante nibh non urna.
+          </p>
+        </div>
+        <div class="testimonitals__item">
+          <div class="testimonitals__item-title">
+            <div>
+              <h3 class="mb-1.5 text-metatitle3 text-black dark:text-white">
+                Devid Smith
+              </h3>
+              <p>Founter @democompany</p>
+            </div>
+            <img class="h-[60px] w-[60px]" src="../img/user-02.png" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+            nisi, convallis fringilla ante nibh non urna.
+          </p>
+        </div>
+        <div class="testimonitals__item">
+          <div class="testimonitals__item-title">
+            <div>
+              <h3 class="mb-1.5 text-metatitle3 text-black dark:text-white">
+                Devid Smith
+              </h3>
+              <p>Founter @democompany</p>
+            </div>
+            <img class="h-[60px] w-[60px]" src="../img/user-01.png" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+            nisi, convallis fringilla ante nibh non urna.
+          </p>
+        </div>
+        <div class="testimonitals__item">
+          <div class="testimonitals__item-title">
+            <div>
+              <h3 class="mb-1.5 text-metatitle3 text-black dark:text-white">
+                Devid Smith
+              </h3>
+              <p>Founter @democompany</p>
+            </div>
+            <img class="h-[60px] w-[60px]" src="../img/user-02.png" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum
+            nisi, convallis fringilla ante nibh non urna.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- BACK TO TOP  -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top"
       ><i class="fa-sharp fa-thin fa-angle-up"></i
@@ -928,6 +1009,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- waypoin js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
     <!-- flowbite script  -->
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- BACK TO TOP JS -->
@@ -937,6 +1024,40 @@
     <script src="../js/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <!-- slick-carousel js  -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".testimonitals__content").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
     </script>
     <!-- index.js  -->
     <script src="../js/index.js"></script>

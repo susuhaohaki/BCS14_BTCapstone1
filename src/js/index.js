@@ -30,120 +30,29 @@ elementToggleLight.onclick = toggleElements;
 let elementTabItem1 = document.getElementById("tabItem1");
 let elementTabItem2 = document.getElementById("tabItem2");
 let elementTabItem3 = document.getElementById("tabItem3");
-elementTabItem1.onclick = function () {
-  elementTabItem2.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem3.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem1.classList.add(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-};
-elementTabItem2.onclick = function () {
-  elementTabItem1.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem3.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem2.classList.add(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-};
-elementTabItem3.onclick = function () {
-  elementTabItem1.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem2.classList.remove(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-  elementTabItem3.classList.add(
-    "w-full",
-    "relative",
-    "before:absolute",
-    "before:bottom-0",
-    "before:left-0",
-    "before:h-1",
-    "before:w-full",
-    "before:rounded-tl-[4px]",
-    "before:rounded-tr-[4px]",
-    "before:bg-primary"
-  );
-};
+
+let tabItems = [elementTabItem1, elementTabItem2, elementTabItem3];
+let activeClasses = [
+  "w-full",
+  "relative",
+  "before:absolute",
+  "before:bottom-0",
+  "before:left-0",
+  "before:h-1",
+  "before:w-full",
+  "before:rounded-tl-[4px]",
+  "before:rounded-tr-[4px]",
+  "before:bg-primary",
+];
+
+function setActiveTab(activeItem) {
+  tabItems.forEach((item) => item.classList.remove(...activeClasses));
+  activeItem.classList.add(...activeClasses);
+}
+
+elementTabItem1.onclick = () => setActiveTab(elementTabItem1);
+elementTabItem2.onclick = () => setActiveTab(elementTabItem2);
+elementTabItem3.onclick = () => setActiveTab(elementTabItem3);
 
 //FAQS
 let elementFaqsRightDesc1 = document.querySelector(".faqs__right-desc1");

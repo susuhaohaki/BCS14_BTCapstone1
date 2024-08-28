@@ -27,6 +27,7 @@ body {
 .title p {
   @apply mx-auto md:w-4/5 lg:w-3/5 xl:w-[639px];
 }
+
 /* HEADER */
 header {
   @apply w-full py-7 fixed left-0 top-0 z-[999] bg-white dark:bg-dark;
@@ -360,6 +361,37 @@ header {
 .faqs__right .faqs__right-desc {
   @apply border-t border-stroke px-6 py-5 dark:border-strokedark lg:px-9 lg:py-[1.875rem];
 }
+/* TESTIMONIALS */
+.testimonitals {
+  @apply max-w-[1235px] mx-auto px-4 md:px-8 xl:px-0;
+}
+.testimonitals .testimonitals__content {
+  @apply mt-[55px];
+}
+.testimonitals__content .testimonitals__item {
+  @apply m-[25px] rounded-lg bg-white p-9 pt-[30px] shadow-solid-9 dark:border dark:border-strokedark dark:bg-blacksection dark:shadow-none;
+}
+.testimonitals__item .testimonitals__item-title {
+  @apply mb-[30px] flex justify-between border-b border-stroke pb-6 dark:border-strokedark;
+}
+/* Tùy chỉnh cho dot khi active */
+.slick-dots li.slick-active button:before {
+  width: 20px;
+  height: 10px;
+  background-color: #006bff;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+/* Tùy chỉnh dot mặc định */
+.slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Màu cho dot không active */
+  border-radius: 50%; /* Hình tròn mặc định */
+  opacity: 0.5; /* Dot không active sẽ có độ trong suốt */
+}
+
 /* BACKTOTOP */
 .backToTop {
   position: fixed;
