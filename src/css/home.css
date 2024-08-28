@@ -363,7 +363,7 @@ header {
 }
 /* TESTIMONIALS */
 .testimonitals {
-  @apply max-w-[1235px] mx-auto px-4 md:px-8 xl:px-0;
+  @apply max-w-[1235px] mx-auto px-4 md:px-8 xl:px-0 pb-[5.625rem];
 }
 .testimonitals .testimonitals__content {
   @apply mt-[55px];
@@ -373,6 +373,45 @@ header {
 }
 .testimonitals__item .testimonitals__item-title {
   @apply mb-[30px] flex justify-between border-b border-stroke pb-6 dark:border-strokedark;
+}
+/* PLANT */
+.plan {
+  @apply overflow-hidden pb-20 pt-[3.75rem] lg:pb-[6.25rem] xl:pb-[7.5rem];
+}
+.plan .plan__container {
+  @apply relative mx-auto mt-[3.75rem] max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0;
+}
+.plan__container .plan__content {
+  @apply flex flex-wrap justify-center gap-[1.875rem] lg:flex-nowrap xl:gap-[3.125rem];
+}
+.plan__content .plan__item {
+  @apply relative rounded-lg border border-stroke bg-white p-[1.875rem] shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-[3.125rem];
+}
+.plan__item h3 {
+  @apply mb-[1.875rem] text-3xl font-bold text-black dark:text-white xl:text-[44px] xl:leading-[55px];
+}
+.plan__item h3 span {
+  @apply text-[16px] leading-[26px] text-[#757693] dark:text-[#999aa1];
+}
+.plan__item h4 {
+  @apply mb-2.5 text-[22px] leading-[35px] font-medium text-black dark:text-white;
+}
+.plan__item .plan-detail {
+  @apply mt-9 border-t border-stroke pb-[3.125rem] pt-9 dark:border-strokedark;
+}
+.plan-detail ul li:nth-child(1),
+.plan-detail ul li:nth-child(2) {
+  @apply mb-4 text-black last:mb-0 dark:text-[#999aa1];
+}
+.plan-detail ul li:nth-child(3),
+.plan-detail ul li:nth-child(4) {
+  @apply mb-4 text-black opacity-40 last:mb-0 dark:text-[#999aa1];
+}
+.plan__content a {
+  @apply inline-flex items-center gap-2.5 font-medium text-[#006bff] transition-all duration-300 dark:text-white dark:hover:text-[#006bff];
+}
+.plan__content a:hover span {
+  @apply duration-300 pr-2;
 }
 /* Tùy chỉnh cho dot khi active */
 .slick-dots li.slick-active button:before {

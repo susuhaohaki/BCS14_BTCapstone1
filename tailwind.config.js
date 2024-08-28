@@ -10,6 +10,9 @@ module.exports = {
           "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(45, 74, 170, 0.06) 0px 12px 120px 0px",
         "solid-9":
           "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(45, 74, 170, 0.06) 0px 12px 30px 0px",
+
+        "solid-10":
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(45, 74, 170, 0.06) 0px 8px 30px 0px",
       },
       backgroundColor: {
         primary: "#006bff",
