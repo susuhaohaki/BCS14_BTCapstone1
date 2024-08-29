@@ -413,6 +413,32 @@ header {
 .plan__content a:hover span {
   @apply duration-300 pr-2;
 }
+/* SUPPORT */
+.support {
+  @apply px-4 md:px-8 xl:px-0;
+}
+.support .support__container {
+  @apply relative mx-auto max-w-[1390px] px-[1.875rem] pt-10 lg:px-[3.75rem] lg:pt-[3.75rem] xl:px-20 xl:pt-20;
+}
+.support__container .support__content {
+  @apply flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20;
+}
+.support__content .support__content-left {
+  @apply w-full rounded-lg bg-white p-[1.875rem] shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-[3.75rem];
+}
+.support__content-left h2 {
+  @apply mb-[3.75rem] text-3xl font-semibold text-black dark:text-white xl:text-[40px] xl:leading-[52px];
+}
+
+.support__content .support__content-right {
+  @apply w-full md:w-2/5 md:p-[1.875rem] lg:w-[26%] xl:pt-[3.75rem];
+}
+.support__content-right h3 {
+  @apply mb-[3.125rem] text-3xl font-semibold text-black dark:text-white xl:text-[40px] xl:leading-[52px];
+}
+.support__content-right h4 {
+  @apply mb-4 text-[18px] leading-[26px] font-medium text-black dark:text-white;
+}
 /* Tùy chỉnh cho dot khi active */
 .slick-dots li.slick-active button:before {
   width: 20px;
