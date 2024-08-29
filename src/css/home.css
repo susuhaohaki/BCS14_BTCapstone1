@@ -424,7 +424,7 @@ header {
   @apply flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20;
 }
 .support__content .support__content-left {
-  @apply w-full rounded-lg bg-white p-[1.875rem] shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-[3.75rem];
+  @apply w-full rounded-lg bg-white p-[1.875rem] shadow-solid-8 dark:border dark:border-strokedark dark:bg-[#181c31] md:w-3/5 lg:w-3/4 xl:p-[3.75rem];
 }
 .support__content-left h2 {
   @apply mb-[3.75rem] text-3xl font-semibold text-black dark:text-white xl:text-[40px] xl:leading-[52px];
@@ -439,6 +439,36 @@ header {
 .support__content-right h4 {
   @apply mb-4 text-[18px] leading-[26px] font-medium text-black dark:text-white;
 }
+
+/* NEWS */
+.news {
+  @apply py-[5rem] lg:py-[6.25rem] xl:py-[7.5rem];
+}
+.news .news__container {
+  @apply mx-auto mt-[3.75rem] max-w-[1280px] px-4 md:px-8 xl:mt-20 xl:px-0;
+}
+.news__container .news__content {
+  @apply grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-3 xl:gap-10;
+}
+.news__content .news__item {
+  @apply rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection;
+}
+.news__content .news__item a {
+  @apply relative block aspect-[368/239] overflow-hidden rounded-lg;
+}
+.news__item a img {
+  @apply h-full w-full inset-0;
+}
+.news__item a:hover img {
+  @apply absolute duration-300 scale-110;
+}
+.news__item .news__item-content {
+  @apply px-4;
+}
+.news__item-content h3 {
+  @apply mb-3.5 mt-[1.875rem] line-clamp-2 text-lg font-medium text-black hover:text-[#006bff] dark:text-white dark:hover:text-[#006bff] xl:text-[24px] xl:leading-[32px];
+}
+
 /* Tùy chỉnh cho dot khi active */
 .slick-dots li.slick-active button:before {
   width: 20px;
