@@ -66,15 +66,19 @@
     <link href="../css/home-output.css" rel="stylesheet" />
     <title>Solid layout</title>
   </head>
-  <body id="body" class="h-[10000px]">
+  <body id="body">
     <!-- HEADER -->
     <header>
       <nav>
         <div class="navbar__container">
           <div class="navbar__brand">
             <a href="#!">
-              <img src="../img/logo-light.svg" alt="" class="img-light" />
-              <img src="../img/logo-dark.svg" alt="" class="img-dark hidden" />
+              <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+              <img
+                src="../img/logo-dark.svg"
+                alt=""
+                class="dark:block hidden"
+              />
             </a>
           </div>
           <button
@@ -86,7 +90,7 @@
           >
             <span class="sr-only">Open main menu</span>
             <svg
-              class="w-5 h-5"
+              class="w-5 h-5 dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -214,12 +218,12 @@
         <img
           src="../img/hero-light.svg"
           alt=""
-          class="img-light w-full h-full shadow-solid_l"
+          class="dark:hidden w-full h-full shadow-solid_l"
         />
         <img
           src="../img/hero-dark.svg"
           alt=""
-          class="img-dark hidden w-full h-full shadow-solid_l"
+          class="dark:block hidden w-full h-full shadow-solid_l"
         />
         <img src="../img/shape-01.png" alt="" class="shap1" />
         <img src="../img/shape-02.svg" alt="" class="shap2" />
@@ -233,44 +237,48 @@
           ><img
             src="../img/brand-light-01.svg"
             alt="brand1"
-            class="img-light"
+            class="dark:hidden"
           />
-          <img src="../img/brand-dark-01.svg" class="img-dark hidden" alt="" />
+          <img
+            src="../img/brand-dark-01.svg"
+            class="dark:block hidden"
+            alt=""
+          />
         </a>
         <a href="#!" class="animate__delay-2"
           ><img
             src="../img/brand-light-02.svg"
             alt="brand2"
-            class="img-light" />
-          <img src="../img/brand-dark-02.svg" class="img-dark hidden" alt=""
+            class="dark:hidden" />
+          <img src="../img/brand-dark-02.svg" class="dark:block hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-3"
           ><img
             src="../img/brand-light-03.svg"
             alt="brand3"
-            class="img-light" />
-          <img src="../img/brand-dark-03.svg" class="img-dark hidden" alt=""
+            class="dark:hidden" />
+          <img src="../img/brand-dark-03.svg" class="dark:block hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-4"
           ><img
             src="../img/brand-light-04.svg"
             alt="brand4"
-            class="img-light" />
-          <img src="../img/brand-dark-04.svg" class="img-dark hidden" alt=""
+            class="dark:hidden" />
+          <img src="../img/brand-dark-04.svg" class="dark:block hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-5"
           ><img
             src="../img/brand-light-05.svg"
             alt="brand5"
-            class="img-light" />
-          <img src="../img/brand-dark-05.svg" class="img-dark hidden" alt=""
+            class="dark:hidden" />
+          <img src="../img/brand-dark-05.svg" class="dark:block hidden" alt=""
         /></a>
         <a href="#!" class="animate__delay-6"
           ><img
             src="../img/brand-light-06.svg"
             alt="brand6"
-            class="img-light" />
-          <img src="../img/brand-dark-06.svg" class="img-dark hidden" alt=""
+            class="dark:hidden" />
+          <img src="../img/brand-dark-06.svg" class="dark:block hidden" alt=""
         /></a>
       </div>
     </section>
@@ -372,7 +380,7 @@
           decoding="async"
           data-nimg="fill"
           src="../img/about-light-01.png"
-          class="img-light"
+          class="dark:hidden"
         />
         <img
           alt="About"
@@ -380,7 +388,7 @@
           decoding="async"
           data-nimg="fill"
           src="../img/about-dark-01 (1).png"
-          class="img-dark hidden"
+          class="dark:block hidden"
         />
       </div>
       <div class="startup__content">
@@ -439,8 +447,8 @@
         ></a>
       </div>
       <div class="integration__img">
-        <img src="../img/about-light-02.svg" alt="" class="img-light" />
-        <img src="../img/about-dark-02.svg" alt="" class="img-dark hidden" />
+        <img src="../img/about-light-02.svg" alt="" class="dark:hidden" />
+        <img src="../img/about-dark-02.svg" alt="" class="dark:block hidden" />
       </div>
     </section>
     <!-- TABS -->
@@ -566,12 +574,12 @@
                 <img
                   src="../img/features-light-01.png"
                   alt=""
-                  class="img-light"
+                  class="dark:hidden"
                 />
                 <img
                   src="../img/features-dark-01.svg"
                   alt=""
-                  class="img-dark hidden"
+                  class="dark:block hidden"
                 />
               </div>
             </div>
@@ -600,12 +608,12 @@
                 <img
                   src="../img/features-light-01.png"
                   alt=""
-                  class="img-light"
+                  class="dark:hidden"
                 />
                 <img
                   src="../img/features-dark-01.svg"
                   alt=""
-                  class="img-dark hidden"
+                  class="dark:block hidden"
                 />
               </div>
             </div>
@@ -649,12 +657,12 @@
                 <img
                   src="../img/features-light-01.png"
                   alt=""
-                  class="img-light"
+                  class="dark:hidden"
                 />
                 <img
                   src="../img/features-dark-01.svg"
                   alt=""
-                  class="img-dark hidden"
+                  class="dark:block hidden"
                 />
               </div>
             </div>
@@ -701,14 +709,14 @@
           class="absolute bottom-0 right-0 -z-10 w-[132px] h-[132px]"
         />
         <img
-          src="../img/shape-dotted-light-02.svg"
+          src="../img/shape-dotted-light.svg"
           alt=""
-          class="img-light absolute left-0 top-0 -z-10 h-full w-full object-fill"
+          class="dark:hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
         />
         <img
-          src="../img/shape-dotted-dark-02.svg"
+          src="../img/shape-dotted-dark.svg"
           alt=""
-          class="img-dark hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
+          class="dark:block hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
         />
       </div>
     </section>
@@ -1229,6 +1237,7 @@
         </div>
       </div>
     </section>
+    <!-- NEWS -->
     <section class="news">
       <div class="title">
         <span>NEWS & BLOGS </span>
@@ -1275,6 +1284,129 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__content">
+            <div class="footer__content-left">
+              <a href="./home.html">
+                <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+                <img
+                  src="../img/logo-dark.svg"
+                  alt=""
+                  class="hidden dark:block"
+                />
+              </a>
+              <p class="mb-10 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p
+                class="mb-1.5 text-[14px] leading-[22px] uppercase tracking-[5px]"
+              >
+                contact
+              </p>
+              <a
+                href="#"
+                class="text-[26px] leading-[32px] font-medium text-black dark:text-white"
+                >hello@solid.com</a
+              >
+            </div>
+            <div class="footer__content-right">
+              <div>
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href="#!">Product</a></li>
+                  <li><a href="#!">Careers</a></li>
+                  <li><a href="#!">Pricing</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#!">Company</a></li>
+                  <li><a href="#!">Press media</a></li>
+                  <li><a href="#!">Our Blog</a></li>
+                  <li><a href="#!">Contact Us</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Newsletter</h4>
+                <p class="mb-4 w-[90%]">Subscribe to receive future updates</p>
+                <div class="relative">
+                  <input
+                    placeholder="Email address"
+                    type="email"
+                    class="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-[#006bff] focus:outline-none dark:border-strokedark dark:bg-[#181c31] dark:shadow-none dark:focus:border-[#066bff]"
+                  />
+                  <div class="absolute right-0 p-4 inline-block">
+                    <svg
+                      class="fill-[#757693] hover:fill-primary dark:fill-white"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_48_1487)">
+                        <path
+                          d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                          fill=""
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_48_1487">
+                          <rect width="20" height="20" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div>
+            <ul class="flex items-center gap-8">
+              <li><a href="#!" class="hover:text-[#006bff]">English</a></li>
+              <li>
+                <a href="#!" class="hover:text-[#006bff]">Privacy Policy</a>
+              </li>
+              <li><a href="#!" class="hover:text-[#006bff]">Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>© 2024 Solid. All rights reserved</p>
+          </div>
+          <div>
+            <ul class="flex items-center gap-5">
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-behance"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- BACK TO TOP  -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top"
       ><i class="fa-sharp fa-thin fa-angle-up"></i
