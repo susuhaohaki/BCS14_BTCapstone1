@@ -11,20 +11,32 @@ window.addEventListener("scroll", function () {
 //TOGGLE DARK LIGHT
 let elementToggleDark = document.getElementById("toggleDark");
 let elementToggleLight = document.getElementById("toggleLight");
-let elementsImgLight = document.querySelectorAll(".img-light");
-let elementsImgDark = document.querySelectorAll(".img-dark");
 let elementBody = document.getElementById("body");
+
+// Kiểm tra xem chế độ tối đã được bật trước đó chưa
+if (localStorage.getItem("darkMode") === "enabled") {
+  elementBody.classList.add("dark");
+  elementBody.classList.add("bg-dark");
+  elementToggleDark.classList.add("hidden");
+  elementToggleLight.classList.remove("hidden");
+}
+
 function toggleElements() {
   elementBody.classList.toggle("dark");
   elementBody.classList.toggle("bg-dark");
   elementToggleDark.classList.toggle("hidden");
   elementToggleLight.classList.toggle("hidden");
-  elementsImgLight.forEach((img) => img.classList.toggle("hidden"));
-  elementsImgDark.forEach((img) => img.classList.toggle("hidden"));
+
+  // Lưu trạng thái chế độ tối vào Local Storage
+  if (elementBody.classList.contains("dark")) {
+    localStorage.setItem("darkMode", "enabled");
+  } else {
+    localStorage.setItem("darkMode", "disabled");
+  }
 }
 
-elementToggleDark.onclick = toggleElements;
-elementToggleLight.onclick = toggleElements;
+elementToggleDark.addEventListener("click", toggleElements);
+elementToggleLight.addEventListener("click", toggleElements);
 
 //FEATURE
 let elementTabItem1 = document.getElementById("tabItem1");
