@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
@@ -66,7 +66,7 @@
     <link href="../css/home-output.css" rel="stylesheet" />
     <title>Sign Up</title>
   </head>
-  <body id="body">
+  <body class="bg-white dark:bg-dark">
     <!-- HEADER -->
     <header>
       <nav>
@@ -186,11 +186,13 @@
                   <a href="./signIn.html" class="font-medium">Sign In</a>
                   <a href="./signUp.html">Sign Up</a>
                 </div>
-                <div class="xl:mr-[6px] cursor-pointer" id="toggleDark">
-                  <img src="../img/icon-moon.svg" alt="" />
-                </div>
-                <div class="hidden xl:mr-[6px] cursor-pointer" id="toggleLight">
-                  <img src="../img/icon-sun.svg" alt="" />
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDarkLight">
+                  <img class="dark:hidden" src="../img/icon-moon.svg" alt="" />
+                  <img
+                    class="hidden dark:block"
+                    src="../img/icon-sun.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -594,6 +596,7 @@
       </div>
     </footer>
     <!-- BACK TO TOP  -->
+    <!-- BACK TO TOP  -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top"
       ><i class="fa-sharp fa-thin fa-angle-up"></i
     ></a>
@@ -635,10 +638,10 @@
           "dark:bg-primary/5"
         );
         document
-          .querySelector("#body > section > div > section > form:nth-child(6)")
+          .querySelector("body > section > div > section > form:nth-child(6)")
           .classList.add("hidden");
         document
-          .querySelector("#body > section > div > section > form:nth-child(5)")
+          .querySelector("body > section > div > section > form:nth-child(5)")
           .classList.remove("hidden");
         elementBtnPassword.classList.remove(
           "border",
@@ -651,10 +654,10 @@
 
       elementBtnPassword.onclick = function () {
         document
-          .querySelector("#body > section > div > section > form:nth-child(6)")
+          .querySelector("body > section > div > section > form:nth-child(6)")
           .classList.remove("hidden");
         document
-          .querySelector("#body > section > div > section > form:nth-child(5)")
+          .querySelector("body > section > div > section > form:nth-child(5)")
           .classList.add("hidden");
         elementBtnMagicLink.classList.remove(
           "border",

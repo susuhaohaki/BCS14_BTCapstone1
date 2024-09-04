@@ -70,7 +70,7 @@
     <link href="./src/css/home-output.css" rel="stylesheet" />
     <title>Solid layout</title>
   </head>
-  <body id="body">
+  <body class="bg-white dark:bg-dark">
     <!-- HEADER -->
     <header>
       <nav>
@@ -191,11 +191,17 @@
                   >
                   <a href="./src/pages/signUp.html">Sign Up</a>
                 </div>
-                <div class="xl:mr-[6px] cursor-pointer" id="toggleDark">
-                  <img src="./src/img/icon-moon.svg" alt="" />
-                </div>
-                <div class="hidden xl:mr-[6px] cursor-pointer" id="toggleLight">
-                  <img src="./src/img/icon-sun.svg" alt="" />
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDarkLight">
+                  <img
+                    class="dark:hidden"
+                    src="./src/img/icon-moon.svg"
+                    alt=""
+                  />
+                  <img
+                    class="hidden dark:block"
+                    src="./src/img/icon-sun.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

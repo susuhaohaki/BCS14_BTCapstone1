@@ -9,19 +9,33 @@ window.addEventListener("scroll", function () {
   }
 });
 //TOGGLE DARK LIGHT
-//TOGGLE DARK LIGHT
-let elementToggleDark = document.getElementById("toggleDark");
-let elementToggleLight = document.getElementById("toggleLight");
-let elementBody = document.getElementById("body");
-function toggleElements() {
-  elementBody.classList.toggle("dark");
-  elementBody.classList.toggle("bg-dark");
-  elementToggleDark.classList.toggle("hidden");
-  elementToggleLight.classList.toggle("hidden");
-}
+// let elementToggleDarkLight = document.getElementById("toggleDarkLight");
+// let elementHtml = document.getElementById("html");
+// elementToggleDarkLight.onclick = function () {
+//   elementHtml.classList.toggle("dark");
+// };
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleButton = document.getElementById("toggleDarkLight");
 
-elementToggleDark.onclick = toggleElements;
-elementToggleLight.onclick = toggleElements;
+  // Check for saved user preference in localStorage
+  const currentTheme = localStorage.getItem("theme");
+  if (currentTheme) {
+    document.documentElement.classList.add(currentTheme);
+  }
+
+  themeToggleButton.addEventListener("click", () => {
+    // Toggle the dark mode class
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+});
+
 //FEATURE
 let elementTabItem1 = document.getElementById("tabItem1");
 let elementTabItem2 = document.getElementById("tabItem2");
