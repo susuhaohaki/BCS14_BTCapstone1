@@ -3,7 +3,9 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
-    "start:home": "npx tailwindcss -i ./src/css/home.css -o ./src/css/home-output.css --watch"
+    "start:home": "npx tailwindcss -i ./src/css/home.css -o ./src/css/home-output.css --watch",
+    "start:docs": "npx tailwindcss -i ./src/css/docs.css -o ./src/css/docs-output.css --watch"
+
   },
   "dependencies": {
     "flowbite": "^2.5.1"

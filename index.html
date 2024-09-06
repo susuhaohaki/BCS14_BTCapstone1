@@ -25,12 +25,6 @@
     />
     <link
       rel="stylesheet"
-      data-purpose="Layout StyleSheet"
-      title="Web Awesome"
-      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
-    />
-    <link
-      rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
     />
     <link
@@ -59,8 +53,20 @@
       rel="stylesheet"
     />
     <!-- slick-carousel  -->
-    <link rel="stylesheet" href="./src/css/slick.css" />
-    <link rel="stylesheet" href="./src/css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ANIMATION CSS CDN -->
     <link
       rel="stylesheet"
@@ -115,7 +121,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./index.html#features">Features</a></li>
                 <li><a href="./src/pages/blog.html">Blog</a></li>
-                <li><a href="#!">Docs</a></li>
+                <li><a href="./src/pages/docs.html">Docs</a></li>
                 <li class="relative">
                   <button
                     id="dropdownNavbarLink"
@@ -143,7 +149,7 @@
                         <a href="./src/pages/signUp.html">Sign Up</a>
                       </li>
                       <li>
-                        <a href="#">Docs</a>
+                        <a href="./src/pages/docs.html">Docs</a>
                       </li>
                       <li>
                         <a href="./src/pages/support.html">Support</a>
@@ -716,6 +722,18 @@
     <!-- TRUSTED -->
     <section class="trusted">
       <div class="trusted__container">
+        <img src="./src/img/shape-04.png" alt="" />
+        <img src="./src/img/shape-05.png" alt="" />
+        <img
+          src="./src/img/shape-dotted-light.svg"
+          alt=""
+          class="dark:hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
+        />
+        <img
+          src="./src/img/shape-dotted-dark.svg"
+          alt=""
+          class="dark:block hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
+        />
         <div class="trusted__content wow animate-top">
           <h2
             class="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3"
@@ -747,26 +765,6 @@
             <p>Winning Award</p>
           </div>
         </div>
-        <img
-          src="./src/img/shape-04.png"
-          alt=""
-          class="absolute -left-[3.75rem] -top-[6.25rem] -z-10 lg:left-0 w-[355px] h-[384px]"
-        />
-        <img
-          src="./src/img/shape-05.png"
-          alt=""
-          class="absolute bottom-0 right-0 -z-10 w-[132px] h-[132px]"
-        />
-        <img
-          src="./src/img/shape-dotted-light.svg"
-          alt=""
-          class="dark:hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
-        />
-        <img
-          src="./src/img/shape-dotted-dark.svg"
-          alt=""
-          class="dark:block hidden absolute left-0 top-0 -z-10 h-full w-full object-fill"
-        />
       </div>
     </section>
     <!-- INTEGRATIONS -->
@@ -782,7 +780,7 @@
       </div>
       <div class="integerations__content wow animate-top">
         <div class="integerations__img">
-          <img src="./src/img/shape-dotted-light-02.svg" alt="" />
+          <img src="./src/img/shape-dotted-light.svg" alt="" />
         </div>
         <div class="integerations__list">
           <div class="integerations__item">

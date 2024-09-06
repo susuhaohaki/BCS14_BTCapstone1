@@ -265,6 +265,13 @@ header {
   @apply relative z-10 mx-auto max-w-[1390px] rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] py-[5.625rem] xl:py-[6.875rem]
   dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark;
 }
+.trusted .trusted__container img:nth-child(1) {
+  @apply absolute -left-[3.75rem] -top-[6.25rem] -z-1 lg:left-0 w-[355px] h-[384px];
+}
+.trusted .trusted__container img:nth-child(2) {
+  @apply absolute bottom-0 right-0 -z-10 w-[132px] h-[132px];
+}
+
 .trusted__container .trusted__content {
   @apply mx-auto mb-[3.125rem] px-4 text-center md:w-4/5 md:px-0 lg:mb-[4.375rem] lg:w-2/3 xl:w-1/2;
 }

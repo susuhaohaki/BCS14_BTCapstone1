@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font inter google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- flowbite css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- slick-carousel  -->
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <!-- ANIMATION CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- main css -->
+    <link href="../css/home-output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/docs-output.css" />
+    <title>Docs Page</title>
+  </head>
+  <body class="bg-white dark:bg-dark">
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="navbar__container">
+          <div class="navbar__brand">
+            <a href="../../index.html">
+              <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+              <img
+                src="../img/logo-dark.svg"
+                alt=""
+                class="dark:block hidden"
+              />
+            </a>
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-[30] h-[30px] justify-center text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="navbar__content dark:bg-dark hidden" id="navbar-default">
+            <div class="navbar__menu">
+              <ul>
+                <li><a href="../../index.html"> Home</a></li>
+                <li><a href="../../index.html#features">Features</a></li>
+
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./docs.html">Docs</a></li>
+                <li class="relative">
+                  <button
+                    id="dropdownNavbarLink"
+                    class="dark:bg-dark"
+                    data-dropdown-toggle="dropdownNavbar"
+                  >
+                    <a href="#!"
+                      >Pages
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden">
+                    <ul
+                      aria-labelledby="dropdownLargeButton"
+                      class="dropdown__menuItem"
+                    >
+                      <li>
+                        <a href="./blog.html">Blog Grid</a>
+                      </li>
+                      <li>
+                        <a href="./signIn.html">Sign In</a>
+                      </li>
+                      <li>
+                        <a href="./signUp.html">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="./docs.html">Docs</a>
+                      </li>
+                      <li>
+                        <a href="./support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="./page404.html">404</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./support.html">Support</a></li>
+              </ul>
+            </div>
+            <div class="navbar__controls">
+              <div class="icon__search">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_369_1884)">
+                    <path
+                      d="M16.9347 15.3963L12.4816 11.7799C14.3168 9.26991 14.1279 5.68042 11.8338 3.41337C10.6194 2.19889 9.00003 1.52417 7.27276 1.52417C5.54549 1.52417 3.92617 2.19889 2.71168 3.41337C0.201738 5.92332 0.201738 10.0256 2.71168 12.5355C3.92617 13.75 5.54549 14.4247 7.27276 14.4247C8.91907 14.4247 10.4574 13.804 11.6719 12.6975L16.179 16.3409C16.287 16.4219 16.4219 16.4759 16.5569 16.4759C16.7458 16.4759 16.9077 16.3949 17.0157 16.26C17.2316 15.9901 17.2046 15.6122 16.9347 15.3963ZM7.27276 13.2102C5.86935 13.2102 4.5739 12.6705 3.57532 11.6719C1.52418 9.62076 1.52418 6.30116 3.57532 4.27701C4.5739 3.27843 5.86935 2.73866 7.27276 2.73866C8.67617 2.73866 9.97162 3.27843 10.9702 4.27701C13.0213 6.32815 13.0213 9.64775 10.9702 11.6719C9.99861 12.6705 8.67617 13.2102 7.27276 13.2102Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_369_1884">
+                      <rect
+                        width="17.2727"
+                        height="17.2727"
+                        fill="white"
+                        transform="translate(0.363647 0.363647)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="navbar__control-right">
+                <div class="navbar__account">
+                  <a href="./signIn.html" class="font-medium">Sign In</a>
+                  <a href="./signUp.html">Sign Up</a>
+                </div>
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDarkLight">
+                  <img class="dark:hidden" src="../img/icon-moon.svg" alt="" />
+                  <img
+                    class="hidden dark:block"
+                    src="../img/icon-sun.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
+      <div class="max-w-[1536px] mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/4">
+            <div
+              class="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4 transition-all dark:border-strokedark dark:bg-blacksection"
+            >
+              <ul class="space-y-2">
+                <li class="block">
+                  <div
+                    id="bootstrap-template-tab"
+                    class="flex w-full cursor-pointer rounded-sm px-3 py-2 text-base bg-white dark:bg-dark dark:text-white"
+                  >
+                    Bootstrap Template Guide
+                  </div>
+                </li>
+                <li class="block">
+                  <div
+                    id="contact-form-tab"
+                    class="flex w-full cursor-pointer rounded-sm px-3 py-2 text-base bg-white dark:bg-dark dark:text-white"
+                  >
+                    Configuring Contact Form
+                  </div>
+                </li>
+                <li class="block">
+                  <div
+                    id="style-guide-tab"
+                    class="flex w-full cursor-pointer rounded-sm px-3 py-2 text-base bg-white dark:bg-dark dark:text-white"
+                  >
+                    Style Guide
+                  </div>
+                </li>
+                <li class="block">
+                  <div
+                    id="tailwind-components-tab"
+                    class="flex w-full cursor-pointer rounded-sm px-3 py-2 text-base bg-white dark:bg-dark dark:text-white"
+                  >
+                    Using Tailwind Components
+                  </div>
+                </li>
+                <li class="block">
+                  <div
+                    id="tailwind-templates-tab"
+                    class="flex w-full cursor-pointer rounded-sm px-3 py-2 text-base bg-white dark:bg-dark dark:text-white"
+                  >
+                    Using Tailwind Templates
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-3/4">
+            <div
+              class="dark:border-strokedark dark:border shadow-three dark:bg-blacksection rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+            >
+              <div class="blog-details" id="welcome-detail">
+                <h1>Welcome to Startup Documentation</h1>
+                <p>
+                  This document serves as a simple template to showcase a sample
+                  layout and format. It is solely created for demonstration
+                  purposes and is not intended for any official use.
+                </p>
+                <p>
+                  Please visit:
+                  <b
+                    ><a href="https://nextjstemplates.com/docs"
+                      >nextjstemplates.com/docs</a
+                    ></b
+                  >
+                  to check out the real docs, setup guide and even video
+                  instructions
+                </p>
+              </div>
+              <div id="bootstrap-template-detail" class="hidden blog-details">
+                <h2>Introduction</h2>
+                <p>
+                  This documentation covers the instruction on how to install
+                  and use the Bootstrap templates, and answers to any common
+                  problems and issues you may face while using the templates.
+                </p>
+                <p>
+                  If you have any question that is beyond the scope of this
+                  documentation feel free to
+                  <a href="https://uideck.com/support/"
+                    >Open a Support Ticket</a
+                  >
+                  or reach out to us on
+                  <a href="https://pimjo.com/discord">Discord</a>.
+                </p>
+                <p>We will get back to you ASAP.</p>
+                <h2>Downloading Templates:</h2>
+                <p>
+                  You can download all available templates that are available
+                  under the big bundle, by visiting your account.
+                </p>
+                <p>
+                  You can download it anytime you want, as long as you have an
+                  account with us.
+                </p>
+                <h2><strong>Installing Templates</strong>:</h2>
+                <p>
+                  To be able to use the template, first, you’ll have to install
+                  it. Here are the steps you will have to take to install it:
+                </p>
+                <p>
+                  <strong>Step#1:</strong> Download the template from GrayGrids.
+                  When you download the template, you’ll get a zip file.
+                </p>
+                <p>
+                  <strong>Step#2</strong>: Unzip/Extract the zip file. After
+                  you’ve extracted it you’ll find all the files and assets
+                  you’ll need.
+                </p>
+                <p>
+                  <strong>Step#3</strong>: Now open up the folder in your code
+                  editor and update the content according to your need.
+                </p>
+                <p>
+                  <strong>Step#4</strong>: After you’ve updated the content, now
+                  go to your cPanel or open your FTP client (like Filezilla) and
+                  upload the template on your server. Make sure to upload it to
+                  the root directory.
+                </p>
+                <p>
+                  Installing is done, now go to
+                  <strong>yourdomainname.com/index.html</strong>. You should see
+                  the website live.
+                </p>
+                <h2><strong>Directory Structure</strong></h2>
+                <p>
+                  When you extract the template folder, you’ll see something
+                  like this inside the folder:
+                </p>
+                <pre><code>|-- Template Folder
+                    |-- assets
+                    |    |-- css
+                    |       |-- All CSS Files
+                    |    |-- scss
+                    |       |-- All SCSS Files
+                    |    |-- js
+                    |       |-- All JS Files
+                    |    |-- fonts
+                    |       |-- All Fonts Files
+                    |    |-- images
+                    |       |-- All Images
+                    |-- index.html and All HTML Files
+                </code></pre>
+                <h2><strong>Customization</strong></h2>
+                <h3><strong>Changing Default Theme Color</strong></h3>
+                <p>
+                  If you want to change the default Theme Color, open
+                  <code>assets-&gt;css&gt;main.css</code> file. And find the
+                  default color and replace it with your preferred color.
+                </p>
+                <p>
+                  <strong>Note:</strong> If you are familiar with Scss, you can
+                  change the color by changing the Scss variable.
+                </p>
+                <h3><strong>Changing Default Font Family</strong></h3>
+                <p>
+                  Just like the color if you want to change the default Font,
+                  then go to <code>assets-&gt;css&gt;main.css</code>
+                </p>
+                <p>
+                  and find all the font-family then replace its property with
+                  your own font-family.
+                </p>
+                <p>
+                  Make sure to include the font’s URL in your HTML or CSS fle.
+                  Otherwise, it won’t work.
+                </p>
+                <p>
+                  <strong>Note:</strong> If you are familiar with Scss, you
+                  change the font-family by changing the Scss variable.
+                </p>
+                <h2><strong>Plugins</strong></h2>
+                <p>
+                  To add interaction to the templates we’ve used these Vanilla
+                  JS and CSS Plugins.
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://biati-digital.github.io/glightbox/"
+                      >Glightbox</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/ganlanyuan/tiny-slider"
+                      >Tiny Slider</a
+                    >
+                  </li>
+                  <li><a href="https://wowjs.uk/docs.html">Wow JS</a></li>
+                  <li>
+                    <a href="https://animate.style/">Animate CSS</a>&nbsp;- with
+                    some modification
+                  </li>
+                </ul>
+                <h2><strong>Images</strong></h2>
+                <p>We used images from Unsplash</p>
+                <ul>
+                  <li><a href="https://unsplash.com/">Unsplash</a></li>
+                </ul>
+                <h2><strong>Icons</strong></h2>
+                <p>For icons, we’ve used Lineicons.</p>
+                <ul>
+                  <li><a href="https://lineicons.com/">Lineicons</a></li>
+                </ul>
+              </div>
+              <div id="contact-form-detail" class="hidden blog-details">
+                <h2>Introduction</h2>
+                <p>
+                  This part of the documentation shows you how you can configure
+                  a contact form with Tailwind CSS Templates and Bootstrap
+                  Templates.
+                </p>
+                <h2>Using PHP Contact Form:</h2>
+                <p>
+                  For Bootstrap templates, we used to provide a PHP script that
+                  only can be used for PHP servers,
+                </p>
+                <p>
+                  if <code>phpmailer</code> function is up and running smoothly.
+                </p>
+                <p>
+                  Here is how it works: Just&nbsp;<strong
+                    >replace the email address with your own</strong
+                  >&nbsp;from
+                </p>
+                <pre><code>assets-&gt;php&gt;contact.php
+                </code></pre>
+                <p>
+                  This procedure should work if everything is configured
+                  properly on the server side.
+                </p>
+                <h2>Using FormBold: A universal Form API (Recommended):</h2>
+                <p>
+                  <a href="https://formbold.com/">FormBold</a> is a powerful
+                  form API and serverless form backend that works with all
+                  hosting, SSG, and frameworks.
+                </p>
+                <p>
+                  We highly recommend, using a serverless end-point (<a
+                    href="https://formbold.com/"
+                    >FormBold</a
+                  >) to make contact form dynamic. Since most users nowadays
+                  don't use PHP servers.
+                </p>
+                <p>
+                  Here’s how to connect
+                  <a href="https://formbold.com/">FormBold</a> API with your
+                  contact form:
+                </p>
+                <p>
+                  <strong>Step#1</strong>: Create an account on
+                  <a href="https://formbold.com/">FormBold</a> and create a
+                  Form.
+                </p>
+                <p>
+                  <strong>Step#2</strong>: Integrate the API into your contact
+                  Form using this code. Make sure your Form’s method is set to
+                  <strong>POST</strong>
+                </p>
+                <pre><code>&lt;form action="https://formbold.com/s/unique_form_id" method="POST"&gt;
+                  &lt;input type="email" placeholder="email" name="email" /&gt;
+                  &lt;input type="text" placeholder="subject" name="subject" /&gt;
+                  &lt;textarea name="message" placeholder="message"&gt;&lt;/textarea&gt;
+                
+                  &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+                &lt;/form&gt;
+                </code></pre>
+                <p>
+                  You’ll find the <code>unique_form_id</code> in the
+                  <a href="https://formbold.com/">FormBold</a> dashboard under
+                  *<strong>*Settings&gt;Integration.**</strong>
+                </p>
+                <p>
+                  Copy and paste it to the <strong>action</strong> attribute.
+                </p>
+                <p>
+                  This is just the basic setup, FormBold has a lot of great
+                  features like re-captcha for spam protection, and the ability
+                  to integrate it with other apps like Webhook, Slack, Notion,
+                  and GoogleSheet. Learn more about
+                  <a href="https://formbold.com/">FormBold</a>
+                  <a href="https://formbold.com/">here</a>.
+                </p>
+              </div>
+              <div id="style-guide-detail" class="hidden blog-details">
+                <p>This Style Guide is followed for this template.</p>
+                <h1>H1 This the Heading One</h1>
+                <h2>H2 This the Heading Two</h2>
+                <h3>H3 This the Heading Three</h3>
+                <h4>H4 This the Heading Four</h4>
+                <h5>H5 This the Heading Five</h5>
+                <p>P this is normal paragraph style</p>
+              </div>
+              <div id="tailwind-components-detail" class="hidden blog-details">
+                <h2>Basic Use and Download</h2>
+                <p>
+                  GrayGrids offers essential Tailwind UI components with the
+                  All-Access Plan. You can use them by copy-pasting them to your
+                  existing Tailwind projects, or you can build completely new
+                  projects with them.
+                </p>
+                <p>
+                  You can also download offline files from the downloads section
+                  of your account.
+                </p>
+                <h2>Configuration:</h2>
+                <p>
+                  We can use GrayGrids with an existing Tailwind project or we
+                  can start from scratch. We will go walk you through both of
+                  the processes.
+                </p>
+                <h3>1. Starting from scratch</h3>
+                <p>
+                  We are going to show you how to start a project with GrayGrids
+                  from scratch. We first will set up a Tailwind CSS project then
+                  we will include GrayGrids in it.
+                </p>
+                <p>
+                  Here are the steps you can take to start a GrayGrids project
+                  from scratch:
+                </p>
+                <p>
+                  <strong>Step#1</strong>: Install Tailwind and generate the
+                  config file.
+                </p>
+                <pre><code>npm install -D tailwindcss
+                npx tailwindcss init
+                </code></pre>
+                <p><strong>Step#2</strong>: Install TailGrids</p>
+                <pre><code>npm i tailgrids
+                </code></pre>
+                <p>
+                  <strong>Step#3</strong>: Update the config file with GrayGrids
+                  config.
+                </p>
+                <pre><code>module.exports = {
+                  content: ["./*.html", "./ecommerce/*.html", "./assets/**/*.js"],
+                  theme: {},
+                  variants: {
+                    extend: {},
+                  },
+                  plugins: [require("tailgrids/plugin")],
+                };
+                </code></pre>
+                <p>
+                  <strong>Step#4</strong>: Add Tailwind CSS directives to your
+                  CSS. Create a CSS file named <strong>input.css</strong> in the
+                  root of your project or the <strong>src</strong> directory.
+                  Then include this code at the top of the file.
+                </p>
+                <pre><code>@tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+                </code></pre>
+                <p>
+                  <strong>Step#5</strong>: Generate the CSS file with the build
+                  command.
+                </p>
+                <p>
+                  To do that first we will have to add the script to the
+                  <strong>package.json</strong> file. Make sure you’ve provided
+                  the correct path of the <strong>input.css</strong> file. if
+                  it’s in the root keep the script as is, if it’s under the
+                  <strong>src</strong> include that before the slash.
+                </p>
+                <pre><code>"scripts": {
+                    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
+                  },
+                </code></pre>
+                <p>Then we will have to run the build command:</p>
+                <pre><code>npm run build
+                </code></pre>
+                <p>
+                  <strong>Step#6</strong>: Include the compiled CSS file in the
+                  Html file. We’ve compiled the file in the
+                  <strong>dist</strong> folder.
+                </p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="UTF-8" /&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                    &lt;link href="/dist/output.css" rel="stylesheet" /&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1 class="text-3xl font-bold underline"&gt;Hello world!&lt;/h1&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                <p>
+                  Now you can just copy and paste the components from GrayGrids
+                  and build websites.
+                </p>
+                <h3>1. Use GrayGrids with the existing Tailwind Project.</h3>
+                <p>……….</p>
+                <p>
+                  Our Tailwind components are powered by&nbsp;<a
+                    href="https://tailgrids.com/"
+                    >TailGrids</a
+                  >, you can learn more about TailGrids from&nbsp;<a
+                    href="https://tailgrids.com/docs"
+                    >TailGrids Docs</a
+                  >
+                  too.
+                </p>
+              </div>
+              <div id="tailwind-templates-detail" class="hidden blog-details">
+                <h2>*<strong>*Introduction**</strong></h2>
+                <p>
+                  This documentation covers the instruction on how to install
+                  and use the Tailwind CSS templates, and answers to any
+                  problems and issues you may face while using the templates.
+                </p>
+                <p>
+                  If you have any question that is beyond the scope of this
+                  documentation feel free to
+                  <a href="https://uideck.com/support/"
+                    >Open a Support Ticket</a
+                  >
+                  or reach out to us on
+                  <a href="https://pimjo.com/discord">Discord</a>.
+                </p>
+                <p>We will get back to you ASAP.</p>
+                <p>
+                  The Tailwind templates are built with plain HTML and Tailwind
+                  CSS and a few Vanilla JS scripts. And we used Alpine JS for
+                  interactions like slider, video, and image popup.
+                </p>
+                <h2><strong>Downloading Templates:</strong></h2>
+                <p>
+                  You can download all available templates that are available
+                  under the big bundle, by visiting your account.
+                </p>
+                <p>
+                  You can download it anytime you want, as long as you have an
+                  account with us.
+                </p>
+                <h2><strong>Directory Structure:</strong></h2>
+                <p>
+                  When you download a template and extract it you’ll get a
+                  folder that looks like this:
+                </p>
+                <pre><code>|-- Template Folder
+                        |-- src
+                        |    |-- css
+                        |       |-- All CSS Files
+                        |    |-- js
+                        |       |-- All JS Files
+                        |    |-- images
+                        |       |-- All Images
+                        |    |-- partials
+                        |       |-- HTML Common Sections Like Header, Footer etc
+                        |    |-- index.html and All HTML Pages Files
+                        |
+                        |
+                        |-- All Config files
+                    </code></pre>
+                <p>
+                  If you want to customize the template just go to&nbsp;the
+                  <code>src</code>&nbsp;folder, and you’ll find all the files
+                  you need to customize.
+                </p>
+                <h2><strong>Installing Tempaltes:</strong></h2>
+                <p>
+                  To use the Tailwind template first we will have to install the
+                  dependencies and plugins included in the template.
+                </p>
+                <p>
+                  <strong>Note</strong>: Before we install the plugins make sure
+                  you have Node.js installed on your machine. Otherwise, the
+                  commands won’t work.
+                </p>
+                <p>
+                  Here are the steps you’ll have to take to install the
+                  templates:
+                </p>
+                <p>
+                  <strong>Step#1:</strong> Download the template from GrayGrids.
+                  When you download the template, you’ll get a zip file.
+                </p>
+                <p>
+                  <strong>Step#2</strong>: Unzip/Extract the zip file. After
+                  you’ve extracted it you’ll find all the files and assets
+                  you’ll need.
+                </p>
+                <p>
+                  <strong>Step#3</strong>: Now open up the Terminal/Command Line
+                  in the project folder. And run this command to install the
+                  plugins and the dependencies:
+                </p>
+                <pre><code>npm install
+                    </code></pre>
+                <p>
+                  It’ll take a few seconds to install. After installation is
+                  done, run this command to start the project:
+                </p>
+                <pre><code>npm run start
+                    </code></pre>
+                <p>
+                  When it starts it’ll automatically open up the project on
+                  <code>[localhost:3000](http://localhost:3000)</code>.
+                </p>
+                <p>
+                  Now you can change the default content and add your own
+                  content, and see the changes on the browser immediately.
+                </p>
+                <h2><strong>Deploying to server</strong></h2>
+                <p>
+                  To deploy the Template, you’ll have to generate the
+                  <code>build</code> folder. You can do that by running this
+                  command:
+                </p>
+                <pre><code>npm run build
+                    </code></pre>
+                <p>
+                  It’ll give you a <code>build</code> folder, now you can just
+                  upload it on your server and your website will be live.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__content">
+            <div class="footer__content-left wow animate-top">
+              <a href="../../index.html">
+                <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+                <img
+                  src="../img/logo-dark.svg"
+                  alt=""
+                  class="hidden dark:block"
+                />
+              </a>
+              <p class="mb-10 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p
+                class="mb-1.5 text-[14px] leading-[22px] uppercase tracking-[5px]"
+              >
+                contact
+              </p>
+              <a
+                href="#"
+                class="text-[26px] leading-[32px] font-medium text-black dark:text-white"
+                >hello@solid.com</a
+              >
+            </div>
+            <div class="footer__content-right">
+              <div class="wow animate-top">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href="#!">Product</a></li>
+                  <li><a href="#!">Careers</a></li>
+                  <li><a href="#!">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#!">Company</a></li>
+                  <li><a href="#!">Press media</a></li>
+                  <li><a href="#!">Our Blog</a></li>
+                  <li><a href="#!">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Newsletter</h4>
+                <p class="mb-4 w-[90%]">Subscribe to receive future updates</p>
+                <div class="relative">
+                  <input
+                    placeholder="Email address"
+                    type="email"
+                    class="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-[#006bff] focus:outline-none dark:border-strokedark dark:bg-[#181c31] dark:shadow-none dark:focus:border-[#066bff]"
+                  />
+                  <div class="absolute right-0 p-4 inline-block">
+                    <svg
+                      class="fill-[#757693] hover:fill-primary dark:fill-white"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_48_1487)">
+                        <path
+                          d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                          fill=""
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_48_1487">
+                          <rect width="20" height="20" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-8">
+              <li><a href="#!" class="hover:text-[#006bff]">English</a></li>
+              <li>
+                <a href="#!" class="hover:text-[#006bff]">Privacy Policy</a>
+              </li>
+              <li><a href="#!" class="hover:text-[#006bff]">Support</a></li>
+            </ul>
+          </div>
+          <div class="wow animate-top">
+            <p>© 2024 Solid. All rights reserved</p>
+          </div>
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-5">
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-behance"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- BACK TO TOP  -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-sharp fa-thin fa-angle-up"></i
+    ></a>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoin js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BACK TO TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main_BackToTop.js"></script>
+    <!-- flowbite script  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.blog-details h1 {
+  @apply text-black dark:text-white text-3xl mb-4 lg:text-[45px] font-bold;
+}
+.blog-details h2,
+.blog-details h2 strong {
+  @apply mb-4 text-[26px] leading-[1.25] font-bold text-black lg:text-3xl xl:text-4xl dark:text-white;
+}
+
+.blog-details p {
+  @apply mb-8 text-base text-[#46495a];
+}
+
+.blog-details p strong {
+  @apply text-primary;
+}
+
+pre {
+  @apply relative mb-2 rounded-lg bg-[#2d2f40] py-2 px-4;
+}
