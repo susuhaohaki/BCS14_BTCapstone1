@@ -399,6 +399,13 @@ header {
 .plan__content .plan__item {
   @apply relative rounded-lg border border-stroke bg-white p-[1.875rem] shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-[3.125rem];
 }
+.plan__content .plan__item:nth-child(2) {
+  @apply relative;
+}
+
+.plan__content .plan__item:nth-child(2) div:first-of-type {
+  @apply absolute -right-3.5 top-[1.875rem] -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-[1.125rem] py-1.5 text-[12px] leading-[20px] font-medium uppercase text-white;
+}
 .plan__item h3 {
   @apply mb-[1.875rem] text-3xl font-bold text-black dark:text-white xl:text-[44px] xl:leading-[55px];
 }
@@ -526,8 +533,11 @@ footer .footer__container {
   background-color: #ccc; /* Màu cho dot không active */
   border-radius: 50%; /* Hình tròn mặc định */
   opacity: 0.5; /* Dot không active sẽ có độ trong suốt */
+  color: transparent;
 }
-
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
 /* BACKTOTOP */
 .backToTop {
   position: fixed;

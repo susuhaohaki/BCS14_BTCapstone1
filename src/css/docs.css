@@ -7,7 +7,7 @@
 }
 
 .blog-details p {
-  @apply mb-8 text-base text-[#46495a];
+  @apply mb-8 text-base text-[#46495a] dark:text-[#757693];
 }
 
 .blog-details p strong {

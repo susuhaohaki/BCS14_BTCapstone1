@@ -58,6 +58,11 @@
   color: rgb(70 73 90 / var(--tw-text-opacity))
 }
 
+.blog-details p:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(117 118 147 / var(--tw-text-opacity))
+}
+
 .blog-details p strong {
   --tw-text-opacity: 1;
   color: rgb(0 107 255 / var(--tw-text-opacity))
