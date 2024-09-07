@@ -256,7 +256,9 @@ header {
 .tabs .tabs__content-left h2 {
   @apply mb-7 text-3xl font-bold text-black xl:text-[40px] xl:leading-[52px] dark:text-white;
 }
-
+.tabs__content .tabs__content-right {
+  @apply mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2;
+}
 /* TRUSTED */
 .trusted {
   @apply px-4 py-20 md:px-8 lg:py-[5.625rem] 2xl:px-0;
