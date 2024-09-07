@@ -123,7 +123,7 @@ header {
 }
 /* BRAND */
 .brand {
-  @apply px-4 md:px-8 mx-auto py-11 bg-[#fbfbfb] border-y-[1px] border-solid border-[#eee] xl:px-0;
+  @apply px-4 md:px-8 mx-auto py-11 bg-[#fbfbfb] border-y-[1px] border-solid border-[#eee] xl:px-0  dark:bg-dark dark:border-y-strokedark;
 }
 .brand .brand__list {
   @apply grid grid-cols-3 gap-[1.875rem] lg:gap-[3.125rem] xl:gap-[7.25rem] md:grid-cols-6 max-w-[1390px] mx-auto;

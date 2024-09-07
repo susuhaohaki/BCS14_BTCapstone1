@@ -2597,6 +2597,14 @@ header {
   padding-bottom: 2.75rem;
 }
 
+.brand:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(45 47 64 / var(--tw-border-opacity));
+  border-bottom-color: rgb(45 47 64 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 28 49 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .brand {
     padding-left: 2rem;
